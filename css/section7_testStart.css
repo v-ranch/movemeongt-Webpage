@@ -65,9 +65,9 @@
 .movemeongt{
   font-family: 'GmarketSansMedium';
   font-size: 16px;
-  color: #5826E8;
+  color: #FFCD4C;
   position: absolute;
   bottom: 0;
   z-index: 3;
-  transform: translate(784.275px, -45px);
+  transform: translate(734px, -45px);
 }

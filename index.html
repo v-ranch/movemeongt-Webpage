@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="css/section1_main.css">
   <link rel="stylesheet" href="css/section2_name.css">
   <link rel="stylesheet" href="css/section3_character.css">
-  <link rel="stylesheet" href="css/information.css">
+  <link rel="stylesheet" href="css/section4_information.css">
   <link rel="stylesheet" href="css/section5_people.css">
   <link rel="stylesheet" href="css/section6_howTo.css">
   <link rel="stylesheet" href="css/section7_testStart.css">
@@ -266,13 +266,6 @@
 
     <!-- 섹션4 -->
     <section id="information" class="mx-auto">
-
-      <div class="section4_textbox mx-auto">
-        <h3>멍때리기</h3>
-        <h1 class="mt-4">멍때려도 괜찮아<br>멍은 필요하니까</h1>
-        <p>멍때리기가 우리에게 어떤 도움을 주는지,<br>어떻게 멍을 때려야하는지 알려줄게.</p>
-      </div>
-
       <!-- 섹션4 - 이미지시퀀스 -->
       <article class="information_fix_wrap">
         <div class="information_cont_box">
@@ -281,34 +274,22 @@
 
             </figure>
           </div>
-          <h1 class="information_txt pos1 active my-0">
-            멍때리기
-          </h1>
-          <h1 class="information_txt pos2 active">
-            SPACE-OUT
-          </h1>
-          <h1 class="information_txt pos3 active">
-            멍하게 바라보다
-          </h1>
-          <h1 class="information_txt pos4 active">
-            공상에 빠지다
-          </h1>
-          <p class="information_txt pos5 active">
-            DMN
-          </p>
-          <h1 class="information_txtL pos6 active">
-            Default Mode Network
-          </h1>
-          <p class="information_txtL pos7 active">
-            DMN은 뇌의 안쪽 전전두엽과 바깥쪽 측두엽<br>
-            그리고 두정엽 영역이 활성화 되는 것을 의미합니다.<br>
-            <br>
-            이 영역은 뇌가 아무런 활동을 하지 않을 때 작동하며,<br>
-            뇌의 각 부위를 연결하여 새로운 생각을 할 수 있도록 돕습니다.<br>
-            <br>
-            또한 이를 통해 에너지 소비와 불안,<br>
-            우울과 같은 감정을 조절할 수 있습니다.<br>
-          </p>
+          <div class="information-txt-box">
+            <p class="information_txt pos1 active">
+              DMN
+            </p>
+            <p class="information_txt pos2 active">
+              (Default Mode Network)
+            </p>
+            <p class="information_txt pos3 active">
+              DMN은 뇌의 안쪽 전전두엽과 바깥쪽 측두엽,<br>
+              그리고 두정엽 영역이 활성화 되는 것을 의미해<br>
+              <br>
+              이 영역은 뇌가 아무런 활동을 하지 않을 때 작동하는데<br>
+              뇌의 각 부위를 연결하여 새로운 생각을 할 수 있도록 돕고<br>
+              불안과 우울 같은 감정을 조절해주는 역할을 해
+            </p>
+          </div>
         </div>
       </article>
     </section>
@@ -494,7 +475,7 @@
         </div>
 
         <div class="test-button">
-          <a  href="testPage/testPage.html">
+          <a href="testPage/testPage.html">
             <p class="test-button-text">입단 테스트 시작하기</p>
           </a>
         </div>
@@ -502,7 +483,7 @@
       </div>
 
       <div class="movemeongt">
-        2021 | 무브멍트 | 김예형 이도은 최용재
+        2021 | 무브멍트 | 김예형 이도은 최용재 | IG @movemeongt
       </div>
 
       <figure class="section7-bottom-img">
@@ -714,7 +695,7 @@
         var ctx2 = canvas2.getContext('2d'); //렌더링 컨텍스트 타입을 2d로 선언
         var imgSrc2 = './img/information/infor'; //이미지의 경로 설정
         var imgFormat2 = '.png'; // 이미지 포맷 설정
-        var imgLength2 = 167; // 총 이미지의 렝쓰
+        var imgLength2 = 210; // 총 이미지의 렝쓰
         var pcImgSize2 = [1920, 1080]; // pc일때 이미지 사이즈 [가로,세로]
         var mobileImgSize2 = [640, 360]; // mobile일때 이미지 사이즈 [가로,세로]
         var imgWidth2; // 이미지 넓이
@@ -768,53 +749,25 @@
 
         function contentIn() { //텍스트 등장을 처리하는 함수
 
-          if (percent2 >= 5 && percent2 < 41) {
+          if (percent2 >= 81) {
             $('.information_txt.pos1').addClass('active');
           }
-          if (percent2 > 60 || percent2 < 5) {
+          if (percent2 < 81) {
             $('.information_txt.pos1').removeClass('active');
           }
 
-          if (percent2 >= 5 && percent2 <= 20) {
+          if (percent2 >= 86) {
             $('.information_txt.pos2').addClass('active');
           }
-          if (percent2 > 20 || percent2 < 5) {
+          if (percent2 < 86) {
             $('.information_txt.pos2').removeClass('active');
           }
 
-          if (percent2 >= 21 && percent2 <= 40) {
+          if (percent2 >= 93) {
             $('.information_txt.pos3').addClass('active');
           }
-          if (percent2 > 40 || percent2 < 21) {
+          if (percent2 < 93) {
             $('.information_txt.pos3').removeClass('active');
-          }
-
-          if (percent2 >= 41 && percent2 <= 60) {
-            $('.information_txt.pos4').addClass('active');
-          }
-          if (percent2 > 60 || percent2 < 41) {
-            $('.information_txt.pos4').removeClass('active');
-          }
-
-          if (percent2 >= 61 && percent2 <= 80) {
-            $('.information_txt.pos5').addClass('active');
-          }
-          if (percent2 > 80 || percent2 < 61) {
-            $('.information_txt.pos5').removeClass('active');
-          }
-
-          if (percent2 >= 81) {
-            $('.information_txtL.pos6').addClass('active');
-          }
-          if (percent2 < 81) {
-            $('.information_txtL.pos6').removeClass('active');
-          }
-
-          if (percent2 >= 86) {
-            $('.information_txtL.pos7').addClass('active');
-          }
-          if (percent2 < 86) {
-            $('.information_txtL.pos7').removeClass('active');
           }
         };
 
