@@ -1,0 +1,205 @@
+#howTo {
+  width: 1920px;
+  height: 100%;
+  position: relative;
+  background-color: #f2f3f5;
+}
+
+.section6-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.section6_textbox {
+  display: flex;
+  flex-direction: row;
+  color: #FFCD4C;
+  text-align: center;
+  margin-top: 300px;
+}
+
+.section6_textbox img {
+  margin-top: 15px;
+}
+
+.section6_textbox p {
+  font-family: 'GmarketSansBold';
+  font-size: 66px;
+  transform: skewX(10deg);
+  color: #5826E8;
+  letter-spacing: -5px;
+  margin: 0;
+}
+
+.section6-description {
+  text-align: center;
+  font-family: 'GmarketSansMedium';
+  font-size: 24px;
+  color: #5826E8;
+  margin-top: 20px;
+}
+
+.ways_grid {
+  position: relative;
+  width: 1200px;
+  height: 406px;
+  margin-top: 60px;
+  z-index: 1;
+  transform: skewX(10deg);
+  margin-bottom: 300px;
+}
+
+.way_box1 {
+  padding: 16.5px 11.5px 106.5px 0px;
+}
+
+.way_box2 {
+  padding: 106.5px 11.5px 16.5px 11.5px;
+}
+
+.way_box3 {
+  padding: 16.5px 11.5px 106.5px 11.5px;
+}
+
+.way_box4 {
+  padding: 106.5px 0px 16.5px 11.5px;
+}
+
+.up {
+  transition: all .2s;
+  overflow: hidden;
+}
+
+#howTo .up:hover {
+  transform: translateY(-15px);
+  transition: all .2s;
+}
+
+#howTo .up:hover .way {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .5);
+}
+
+.way {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0);
+  transition: all .3s;
+}
+
+/* 박스 안 이미지 */
+.way_box1 img {
+  width: 360%;
+  position: absolute;
+  z-index: 0;
+  transform: skewX(-10deg) translate(-390px, -220px);
+}
+
+.way_box2 img {
+  width: 300%;
+  position: absolute;
+  z-index: 0;
+  transform: skewX(-10deg) translate(-360px, -130px);
+}
+
+.way_box3 img {
+  width: 250%;
+  position: absolute;
+  z-index: 0;
+  transform: skewX(-10deg) translate(-340px, -50px);
+}
+
+.way_box4 img {
+  width: 420%;
+  position: absolute;
+  z-index: 0;
+  transform: skewX(-10deg) translate(-880px, -240px);
+}
+
+#howTo .textBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #5826E8;
+  opacity: .7;
+  z-index: 1;
+}
+
+.waybox_wrap {
+  opacity: 0;
+}
+
+#howTo .up:hover .waybox_wrap {
+  opacity: 1;
+}
+
+#howTo .waytext {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) skewX(-10deg);
+  width: 80%;
+  color: #f2f3f5;
+  font-family: 'GmarketSansMedium';
+  font-size: 16px;
+}
+
+#howTo .waytext span {
+  color: #FFCD4C;
+  font-size: 20px;
+  font-family: 'GmarketSansBold';
+}
+
+/* 배경 요소 */
+.appletree{
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.howTo-BG-character{
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.apple-fall{
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-145px, 240px);
+}
+
+.apple-fall img{
+  width: 30%;
+}
+
+.apple-big{
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-100px, 940px);
+  z-index: 2;
+}
+
+.apple-regular{
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-1200px, 830px) rotate(30deg);
+  z-index: 2;
+}
+
+.apple-regular img{
+  width: 60%;
+}

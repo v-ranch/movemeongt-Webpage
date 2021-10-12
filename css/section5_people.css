@@ -1,0 +1,196 @@
+#people {
+  width: 1920px;
+  height: 100%;
+  background: #FFCD4C;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+#people .pimg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 860px;
+  position: relative;
+  background-image: url('../img/peopleBG.jpg');
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100%;
+    width: 1920px;
+}
+
+.section5_textbox {
+  display: flex;
+  flex-direction: row;
+  color: #FFCD4C;
+  text-align: center;
+}
+
+.section5_textbox img {
+  margin-top: 15px;
+}
+
+.section5_textbox p {
+  font-family: 'GmarketSansBold';
+  font-size: 66px;
+  transform: skewX(10deg);
+  color: #5826E8;
+  letter-spacing: -5px;
+  margin: 0;
+}
+
+.section5-description {
+  text-align: center;
+  font-family: 'GmarketSansMedium';
+  font-size: 24px;
+  color: #5826E8;
+  margin-top: 20px;
+}
+
+#people .section5_wrapper {
+  position: relative;
+  width: 1400px;
+  height: 215px;
+  margin-top: 60px;
+  overflow: hidden;
+  transform: skewX(10deg);
+}
+
+#people li {
+  list-style: none;
+}
+
+#people .slide_wrapper {
+  position: relative;
+  width: 1200px;
+  height: 215px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#people .slides {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+#people .slides.animated {
+  transition: .5s ease-out;
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+#people .slides li {
+  width: 384px;
+  height: 200px;
+  background: rgba(242, 243, 245, .6);
+  float: left;
+  border: 1px solid #5826E8;
+}
+
+#people .slides li:not(:last-child) {
+  margin-right: 24px;
+}
+
+#people .controls {
+  position: relative;
+  width: 1400px;
+  height: 200px;
+  color: #f2f3f5;
+  font-size: 32px;
+  font-weight: 700;
+  z-index: 1;
+  top: -200px;
+}
+
+.prev {
+  width: 100px;
+  line-height: 200px;
+  opacity: .5;
+  transition: all .2s;
+  font-family: 'GmarketSansBold';
+  font-size: 60px;
+}
+
+.next {
+  width: 100px;
+  line-height: 200px;
+  text-align: right;
+  opacity: .5;
+  transition: all .2s;
+  font-family: 'GmarketSansBold';
+  font-size: 60px;
+}
+
+.prev:hover {
+  opacity: 1;
+  cursor: pointer;
+  color: #5826E8;
+}
+
+.next:hover {
+  opacity: 1;
+  cursor: pointer;
+  color: #5826E8;
+}
+
+.uxBox {
+  width: 364px;
+  height: 100%;
+  margin-left: 20px;
+  overflow: hidden;
+}
+
+.uxBoxText {
+  padding-top: 28px;
+  height: 100%;
+  z-index: 1;
+  font-size: 16px;
+  font-family: 'GmarketSansMedium';
+  color: #5826E8;
+  transform: skewX(-10deg);
+  padding-right: 0;
+}
+
+.uxBoxImg {
+  padding-top: 2%;
+  transform: skewX(-10deg);
+}
+
+.uxBoxImg img {
+  position: relative;
+  width: 200%;
+  left: -78%;
+}
+
+.tape-ver1 {
+  width: 20px;
+  height: 30px;
+  background: #5826E8;
+  position: absolute;
+  transform: skewX(10deg) translate(182px, -15px);
+}
+
+.tape-ver2 {
+  width: 15px;
+  height: 30px;
+  background: #5826E8;
+  position: absolute;
+  transform: skewX(10deg) translate(184.5px, -12px) rotate(30deg);
+}
+
+.tape-ver3 {
+  width: 15px;
+  height: 25px;
+  background: #5826E8;
+  position: absolute;
+  transform: skewX(10deg) translate(182px, -14px) rotate(-10deg);
+}

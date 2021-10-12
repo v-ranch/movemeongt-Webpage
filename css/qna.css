@@ -1,0 +1,85 @@
+#qna {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  color: #5826E8;
+  background-image: url('../img/test-bg.jpg');
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.status {
+  height: 8px;
+  width: 100%;
+  background-color: #f2f3f5;
+  border-radius: 20px;
+  /*margin-top: 140px;*/
+}
+
+.statusBar {
+  height: 100%;
+  border-radius: 20px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5826e8+0,5f1daf+100 */
+  background: #5826e8;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #5826e8 0%, #5f1daf 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #5826e8 0%, #5f1daf 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #5826e8 0%, #5f1daf 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5826e8', endColorstr='#5f1daf', GradientType=1);
+  /* IE6-9 */
+}
+
+.qBox {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.qna-circle {
+  width: 65px;
+}
+
+.qna-circle img {
+  width: 100%;
+}
+
+.qText {
+  font-family: 'GmarketSansBold';
+  font-size: 32px;
+  color: #5826E8;
+  line-height: 46px;
+  letter-spacing: -1px;
+  margin-top: 20px;
+}
+
+.answerBox {
+  margin-top: 60px;
+}
+
+.answerList {
+  background: #5826E8;
+  display: block;
+  width: 338px;
+  border: 0px;
+  margin-top: 60px;
+  font-family: 'GmarketSansLight';
+  font-size: 20px;
+  color: #f2f3f5;
+  border-radius: 4px;
+}
+
+.answerList:hover, .answerList:focus {
+  background-color: #333333;
+  color: #FFCD4C;
+  font-family: 'GmarketSansMedium';
+}

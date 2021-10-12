@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Movemeongt">
+  <meta name="keywords" content="무브멍트">
+  <meta name="description" content="무브멍트">
+
+  <!-- sns share -->
+  <meta property="og:url" content="https://movemeongt.netlify.app" />
+  <meta property="og:title" content="무브멍트 | 짧지만 위대한 시간" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./img/share.png" />
+  <meta property="og:description" content="무브멍트 멍 유형 추천">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="img/favicon.ico">
+
+  <title>무브멍트</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/section1_main.css">
+  <link rel="stylesheet" href="css/section2_name.css">
+  <link rel="stylesheet" href="css/section3_character.css">
+  <link rel="stylesheet" href="css/information.css">
+  <link rel="stylesheet" href="css/section5_people.css">
+  <link rel="stylesheet" href="css/section6_howTo.css">
+  <link rel="stylesheet" href="css/section7_testStart.css">
+
+  <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+  <script>
+    Kakao.init('e26cbb4af01dbdae2c9e4b6004650975');
+    Kakao.isInitialized();
+  </script>
+</head>
+
+<body>
+  <div class="container-fluid p-0">
+
+    <!-- 테스트 바로가기 -->
+    <div class="test-fastgo">
+      <div class="fastgo-box">
+        <figure class="fastgo-logo">
+          <img src="img/sm_logo.svg" alt="img.svg">
+        </figure>
+        <a class="fastgo-text" href="testPage/testPage.html"><span>테스트</span><br>바로가기</a>
+
+      </div>
+    </div>
+
+    <!-- 네비게이션 -->
+    <nav class="navbar">
+      <div class="nav-container mx-auto">
+        <div class="nav-logo">
+          <a href="index.html">
+            <img src="img/MVMT_Logo_nosub.svg" alt="img/svg">
+          </a>
+        </div>
+        <div class="nav-menu-container">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#name">무브멍트</a>
+            </li>
+            <li class="nav-blank">
+              <img src="img/nav-blank.svg" alt="img/svg">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#character">단원소개</a>
+            </li>
+            <li class="nav-blank">
+              <img src="img/nav-blank.svg" alt="img/svg">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#information">DMN</a>
+            </li>
+            <li class="nav-blank">
+              <img src="img/nav-blank.svg" alt="img/svg">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#people">멍때리는이유</a>
+            </li>
+            <li class="nav-blank">
+              <img src="img/nav-blank.svg" alt="img/svg">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#howTo">멍때리는방법</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- 섹션1 #main -->
+    <section id="main">
+
+      <!-- 섹션1 - 메인비디오썸네일 -->
+      <figure class="section1_video">
+        <div class="hero-black">
+          <img class="mainVidThumb img-fluid mx-auto" src="img/hero_bgimg.jpg" alt="img/jpg">
+        </div>
+
+        <!--동영상 재생 -->
+        <!--  <video width="100%" autoplay loop muted>
+          <source src="./img/mainVid.mp4" type="video/mp4">
+        </video> -->
+      </figure>
+
+      <!--타이틀 -->
+      <div class="hero-wrap">
+        <figure class="hero-title m-0">
+          <img src="img/hero_title.svg" alt="img/svg">
+        </figure>
+      </div>
+
+      <!-- 동영상 모달 -->
+      <input type="checkbox" id="popup">
+      <label for="popup" class="button-box">
+        <p class="button-text">▶ 무브멍트 스토리</p>
+      </label>
+      <div>
+        <div>
+          <label for="popup">
+            <img src="img/close.svg" alt="img/svg">
+          </label>
+          <iframe src="https://player.vimeo.com/video/434594132?h=a6e3f18e63&title=0&byline=0&portrait=0" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <label for="popup"></label>
+      </div>
+
+      <!-- 스크롤 다운 아이콘 -->
+      <a href="#name">
+        <img class="scrollDown" src="img/scrollDown.png" alt="img/png">
+      </a>
+
+    </section>
+
+    <!-- 섹션2 #name -->
+    <section id="name" class="mx-auto my-0">
+
+      <!-- 섹션2 - 이미지시퀀스 -->
+      <article class="name_fix_wrap">
+        <div class="name_cont_box mx-auto px-auto">
+          <div class="name_canvas_wrap">
+            <figure class="name_no_canvas">
+
+            </figure>
+          </div>
+
+          <div class="flex_box">
+            <div class="name-logo-wrap">
+              <figure class="name_logo active">
+                <img src="img/MVMT_Logo.svg" alt="img/svg">
+              </figure>
+              <div class="name_txt active my-0">
+                <div class="korean">
+                  바쁘게 살아가는 현대인에게 멍의 필요성과 다양한 멍때리기 방법을<br>
+                  소개하며 좀 더 많은 사람들이 멍을 때릴 수 있도록 <span>계멍운동</span>을 펼치는 단체
+                </div>
+                <div class="english">
+                  An organization that introduces the need for spacing out and various ways of spacing out to modern people living busy lives and conducts a enlightenment movement so that more people can space out.
+                </div>
+              </div>
+            </div>
+            <div class="hands-wrap">
+
+              <figure>
+                <img src="img/hand2.png" alt="img/png">
+              </figure>
+              <figure>
+                <img src="img/hand1.png" alt="img/png">
+              </figure>
+              <figure>
+                <img src="img/hand3.png" alt="img/png">
+              </figure>
+              <figure>
+                <img src="img/hand4.png" alt="img/png">
+              </figure>
+            </div>
+            <figure class="celebration">
+              <img src="img/celebration.svg" alt="img/svg">
+            </figure>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+
+    <div class="character-top">
+      <img src="img/bar-txt.png" alt="img/png">
+    </div>
+
+    <!-- 섹션3 #character -->
+    <section id="character">
+      <div class="character-container mx-auto">
+        <div class="character-contents">
+          <div class="character-intro">
+            <div class="intro-title">
+              <img src="img/MVMT_Logo_nosub_p.svg" alt="img/svg">
+              <p>단원소개</p>
+            </div>
+            <div class="intro-img2D">
+              <figure>
+                <img src="img/character-intro-img.svg" alt="img.svg">
+              </figure>
+            </div>
+            <div class="intro-description">
+              <p>무브멍트는 8명의 단원이 계멍운동을 펼치고 있어.<br>
+                불멍, 빛멍, 벽멍, 하늘멍, 물멍, 풀멍, 도시멍, 연기멍이 사람들의 멍을 돕고 있지.</p>
+            </div>
+          </div>
+          <div class="character-img">
+            <div class="img-row">
+              <div class="img-box fire">
+                <img src="img/fire_logo_p.svg" alt="img/svg" class="character-logo">
+                <img class="img3D" src="img/image-1.png" alt="img/png">
+              </div>
+              <div class="img-box light">
+                <img src="img/light_logo_p.svg" alt="img/svg" class="character-logo">
+                <img class="img3D" src="img/image-6.png" alt="img/png">
+              </div>
+              <div class="img-box smoke">
+                <img src="img/smoke_logo_p.svg" alt="img/svg" class="character-logo-3">
+                <img class="img3D" src="img/image-4.png" alt="img/png">
+              </div>
+              <div class="img-box water">
+                <img src="img/water_logo_p.svg" alt="img/svg" class="character-logo">
+                <img class="img3D" src="img/image-5.png" alt="img/png">
+              </div>
+            </div>
+
+            <div class="img-row">
+              <div class="img-box city">
+                <img src="img/city_logo_p.svg" alt="img/svg" class="character-logo-3">
+                <img class="img3D" src="img/image-2.png" alt="img/png">
+              </div>
+              <div class="img-box wall">
+                <img src="img/wall_logo_p.svg" alt="img/svg" class="character-logo">
+                <img class="img3D" src="img/image-0.png" alt="img/png">
+              </div>
+              <div class="img-box sky">
+                <img src="img/sky_logo_p.svg" alt="img/svg" class="character-logo-3">
+                <img class="img3D" src="img/image-3.png" alt="img/png">
+              </div>
+              <div class="img-box plant">
+                <img src="img/plant_logo_p.svg" alt="img/svg" class="character-logo">
+                <img class="img3D" src="img/image-7.png" alt="img/png">
+              </div>
+            </div>
+          </div>
+          <div class="character-bg-box"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="character-bottom">
+      <img src="img/bar-img.png" alt="img/png">
+    </div>
+
+    <!-- 섹션4 -->
+    <section id="information" class="mx-auto">
+
+      <div class="section4_textbox mx-auto">
+        <h3>멍때리기</h3>
+        <h1 class="mt-4">멍때려도 괜찮아<br>멍은 필요하니까</h1>
+        <p>멍때리기가 우리에게 어떤 도움을 주는지,<br>어떻게 멍을 때려야하는지 알려줄게.</p>
+      </div>
+
+      <!-- 섹션4 - 이미지시퀀스 -->
+      <article class="information_fix_wrap">
+        <div class="information_cont_box">
+          <div class="information_canvas_wrap">
+            <figure class="information_no_canvas">
+
+            </figure>
+          </div>
+          <h1 class="information_txt pos1 active my-0">
+            멍때리기
+          </h1>
+          <h1 class="information_txt pos2 active">
+            SPACE-OUT
+          </h1>
+          <h1 class="information_txt pos3 active">
+            멍하게 바라보다
+          </h1>
+          <h1 class="information_txt pos4 active">
+            공상에 빠지다
+          </h1>
+          <p class="information_txt pos5 active">
+            DMN
+          </p>
+          <h1 class="information_txtL pos6 active">
+            Default Mode Network
+          </h1>
+          <p class="information_txtL pos7 active">
+            DMN은 뇌의 안쪽 전전두엽과 바깥쪽 측두엽<br>
+            그리고 두정엽 영역이 활성화 되는 것을 의미합니다.<br>
+            <br>
+            이 영역은 뇌가 아무런 활동을 하지 않을 때 작동하며,<br>
+            뇌의 각 부위를 연결하여 새로운 생각을 할 수 있도록 돕습니다.<br>
+            <br>
+            또한 이를 통해 에너지 소비와 불안,<br>
+            우울과 같은 감정을 조절할 수 있습니다.<br>
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- 섹션5 -->
+    <section id="people" class="mx-auto">
+      <div class="pimg mx-auto">
+        <div class="section5_textbox mx-auto">
+          <img src="img/title-stick.svg" alt="img/svg">
+          <p>멍잘알이 멍알못에게</p>
+        </div>
+        <div class="section5-description">
+          멍이 왜 좋은지 아직도 잘 모르겠어?<br>
+          우리가 직접 사람들에게 멍이 왜 좋은지 물어봤어!
+        </div>
+        <div class="section5_wrapper my-5 mx-auto">
+          <div class="slide_wrapper mx-auto">
+            <ul class="slides">
+              <li>
+                <div class="tape-ver1"></div>
+                <div class="uxBox row">
+                  <p class="uxBoxText col-8">바쁘게 치이며 살아가는 현대<br>사회와 난무하는 미디어 속에서 쉼을 갖고 머리에게 휴식을<br>줄 수 있다.</p>
+                  <figure class="uxBoxImg col-4"><img src="img/people1.png" alt="img/png"></figure>
+                </div>
+              </li>
+              <li>
+                <div class="tape-ver2"></div>
+                <div class="uxBox row">
+                  <p class="uxBoxText col-8">잡생각이 없어지고<br>뇌가 맑아지는 기분이 든다!</p>
+                  <figure class="uxBoxImg col-4"><img src="img/people4.png" alt="img/png"></figure>
+                </div>
+              </li>
+              <li>
+                <div class="tape-ver3"></div>
+                <div class="uxBox row">
+                  <p class="uxBoxText col-8">끊임없이 머릿 속을 채우다보면 정신이 탁해지는데 그때 걸으며 멍하니 있을 때 새로운 인사이트를 얻게 되는 경우를 경험했다.</p>
+                  <figure class="uxBoxImg col-4"><img src="img/people3.png" alt="img/png"></figure>
+                </div>
+              </li>
+              <li>
+                <div class="tape-ver1"></div>
+                <div class="uxBox row">
+                  <p class="uxBoxText col-8">바쁜 생활 속 아무 생각도<br>안 하는 멍때리기가 짧은 쉼을<br>줍니다.</p>
+                  <figure class="uxBoxImg col-4"><img src="img/people2.png" alt="img/png"></figure>
+                </div>
+              </li>
+              <li>
+                <div class="tape-ver2"></div>
+                <div class="uxBox row">
+                  <p class="uxBoxText col-8">평소에 복잡한 생각을 하다가<br>머리가 아플 때 멍 때리면 머리<br>아픈 게 나아집니다.</p>
+                  <figure class="uxBoxImg col-4"><img src="img/people5.png" alt="img/png"></figure>
+                </div>
+              </li>
+              <li>
+                <div class="tape-ver3"></div>
+                <div class="uxBox row">
+                  <p class="uxBoxText col-8">멍때리기는 창의력 충전의<br>최고의 방법!</p>
+                  <figure class="uxBoxImg col-4"><img src="img/people1.png" alt="img/png"></figure>
+                </div>
+              </li>
+              <li>
+                <div class="tape-ver1"></div>
+                <div class="uxBox row">
+                  <p class="uxBoxText col-8">아무 생각없이 혼자만의 시간을 즐기는 나름의 방법이라고 생각한다. 리프레시도 되고 잠시 휴식시간을 가질 수 있어서 좋다.</p>
+                  <figure class="uxBoxImg col-4"><img src="img/people3.png" alt="img/png"></figure>
+                </div>
+              </li>
+              <li>
+                <div class="tape-ver2"></div>
+                <div class="uxBox row">
+                  <p class="uxBoxText col-8">멍으로 발현되는 공백은 발전을 위한 밑거름이다. 신문지 위에<br>그림을 그리는 것보다 백지에<br>그림을 그리는 것이 효율적이다.</p>
+                  <figure class="uxBoxImg col-4"><img src="img/people5.png" alt="img/png"></figure>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+          <div class="controls row mx-auto">
+            <div class="prev mx-auto col-1"> ◀ </div>
+            <div class="col-10"></div>
+            <div class="next mx-auto col-1"> ▶ </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 섹션6 -->
+    <section id="howTo" class="mx-auto">
+      <div class="section6-container">
+        <div class="section6_textbox mx-auto">
+          <img src="img/title-stick.svg" alt="img/svg">
+          <p>멍때리기 우리가 알려줄게</p>
+        </div>
+        <div class="section6-description">
+          멍이 왜 좋은지 아직도 잘 모르겠어?<br>
+          우리가 직접 사람들에게 멍이 왜 좋은지 물어봤어!
+        </div>
+
+        <div class="ways_grid row">
+          <div class="way_box1 up col">
+            <div class="way">
+              <div class="waybox_wrap">
+                <p class="waytext">
+                  <span class="bold">얼마나 멍때려야 하죠?</span><br></br>
+                  하루 최소 10분 정도 멍때리는<br> 시간을 갖는게 좋아.
+                </p>
+                <div class="textBox"></div>
+              </div>
+              <img src="img/howTo-1.jpg" alt="img/jpg">
+            </div>
+          </div>
+          <div class="way_box2 up col">
+            <div class="way">
+              <div class="waybox_wrap">
+                <p class="waytext">
+                  <span class="bold">생각을 멈출 수 없어요!</span><br></br>
+                  생각을 버려야한다는 강박은<br>오히려 멍을 방해해. 자연스럽게 주변을 천천히 둘러봐.
+                </p>
+                <div class="textBox"></div>
+              </div>
+              <img src="img/howTo-2.jpg" alt="img/jpg">
+            </div>
+          </div>
+          <div class="way_box3 up col">
+            <div class="way">
+              <div class="waybox_wrap">
+                <p class="waytext">
+                  <span class="bold">무슨 생각을 해야하죠?</span><br></br>
+                  눈에 보이는 대상을 주의 깊게<br>관찰해봐.
+                </p>
+                <div class="textBox"></div>
+              </div>
+              <img src="img/howTo-3.jpg" alt="img/jpg">
+            </div>
+          </div>
+          <div class="way_box4 up col">
+            <div class="way">
+              <div class="waybox_wrap">
+                <p class="waytext">
+                  <span class="bold">멍을 더 잘 때리려면<br>어떻게 해야하죠?</span><br></br>
+                  소리, 느낌, 향기, 맛 등<br> 멍을 때리며 다양한 오감을<br>최대한 활용해봐.
+                </p>
+                <div class="textBox"></div>
+              </div>
+              <img src="img/howTo-4.jpg" alt="img/jpg">
+            </div>
+          </div>
+        </div>
+
+        <figure class="appletree">
+          <img src="img/appletree.png" alt="img/png">
+        </figure>
+        <figure class="howTo-BG-character">
+          <img src="img/howTo-character.png" alt="img/png">
+        </figure>
+        <figure class="apple-fall">
+          <img src="img/apple.png" alt="img/png">
+        </figure>
+        <figure class="apple-big">
+          <img src="img/apple.png" alt="img/png">
+        </figure>
+        <figure class="apple-regular">
+          <img src="img/apple.png" alt="img/png">
+        </figure>
+      </div>
+    </section>
+
+    <!-- 섹션7 -->
+    <section id="testStart" class="mx-auto">
+      <div class="section7-container">
+
+        <!--텍스트 -->
+        <div class="section7-intro">
+          <div class="intro-title">
+            <img src="img/MVMT_Logo_nosub_p.svg" alt="img/svg">
+            <p>입단하기</p>
+          </div>
+          <div class="intro-description">
+            <p>무브멍트랑 같이 멍때리면서 계멍운동하지 않을래?<br>
+              입단 테스트를 하면 지금 어떤 멍을 때려야할지 추천해줄 수 있어!</p>
+          </div>
+        </div>
+
+        <div class="test-button">
+          <a  href="testPage/testPage.html">
+            <p class="test-button-text">입단 테스트 시작하기</p>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="movemeongt">
+        2021 | 무브멍트 | 김예형 이도은 최용재
+      </div>
+
+      <figure class="section7-bottom-img">
+        <img class="togoBG img-fluid" src="img/assemble.png" alt="img/png">
+      </figure>
+    </section>
+
+    <script src="js/jquery.1.12.4.js"></script>
+    <!-- 네비게이션 +  Name 스크롤 애니메이션 -->
+    <script type="text/javascript">
+      $(function() {
+
+        var scrollBody = $('#name'); //부모 스크롤 엘리먼트
+
+        var scrollHeight; // 스크롤 높이
+        var sectionOffsetTop; //섹션의 오프셋 탑 변수
+        var sectionScrolTop; //섹션의 스크롤 탑 변수
+        var scrollRealHeight; //실제로 스크롤해야될 높이를 담을 변수를 선업합니다
+        var winScrollTop; // 스크롤바의 높이를 담을 변수를 선업합니다
+        var scrollPerecnt; // 스크롤위치 / 스크롤 길이로 구한 비율 값
+        var percent; // 스크롤 백분율값을 담을 변수를 선업합니다
+
+        var windowWdith = $(window).width(); // 화면의 넓이값
+        var mobileSize = 1024; //모바일로 변환된 사이즈 설정 (기기명으로 모바일버전을 체크하는게 아니라 스크린 사이즈가 1024보다 작을경우 모바일로 간주함)
+        var isMobile; //화면사이즈가 모바일인지 체크하는 변수
+
+        var el = document.querySelector('.name_canvas_wrap'); //캔버스를 담을 요소
+        var canvas = document.createElement('canvas'); // 캔버스 생성
+        canvas.setAttribute("class", "name_canvas");
+        var ctx = canvas.getContext('2d'); //렌더링 컨텍스트 타입을 2d로 선언
+        var imgSrc = './img/flag/flag'; //이미지의 경로 설정
+        var imgFormat = '.png'; // 이미지 포맷 설정
+        var imgLength = 120; // 총 이미지의 렝쓰
+        var pcImgSize = [1920, 1080]; // pc일때 이미지 사이즈 [가로,세로]
+        var mobileImgSize = [360, 640]; // mobile일때 이미지 사이즈 [가로,세로]
+        var imgWidth; // 이미지 넓이
+        var imgHeight; // 이미지 높이
+        var imgArray = []; // 이미지를 담을 배열
+        var imageIterlator = 0; // 이미지가 로드되었는지 체크하는 값
+
+        //네비게이션바?
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('.navbar').outerHeight();
+
+        function setProperty() { //스크롤할때 변할 값들을 셋팅해주는 함수
+
+          scrollHeight = scrollBody.height(); // 스크롤 높이
+          sectionOffsetTop = scrollBody.offset().top; //섹션의 오프셋 탑 변수
+
+          scrollRealHeight = (scrollHeight - $(window).height()); //실제로 스크롤해야될 높이값을 구합니다
+          winScrollTop = $(window).scrollTop(); //스크롤바의 현재 위치를 구합니다
+          sectionScrolTop = winScrollTop - sectionOffsetTop
+
+          scrollPerecnt = sectionScrolTop / scrollRealHeight; // 스크롤위치 / 스크롤 길이로 구한 비율 값
+          percent = scrollPerecnt * 100; //백분율을 구합니다
+          /* 윗쪽 내용 지겹도록 설명했죠!! ^^;; */
+
+          windowWdith = $(window).width(); //윈도우의 넓이
+          isMobile = windowWdith > mobileSize ? false : true; //PC일경우 false, MOBILE일경우 true
+
+          imgWidth = !isMobile ? pcImgSize[0] : mobileImgSize[0]; // 이미지 넓이
+          imgHeight = !isMobile ? pcImgSize[1] : mobileImgSize[1];; // 이미지 높이
+
+        };
+
+        function setCanvas() { //캔버스 기본값 셋팅
+
+          canvas.width = imgWidth; //캔버스 넓이 세팅
+          canvas.height = imgHeight; //캔버스 높이 세팅를
+
+        };
+
+        function scrollFunc() { //스크롤할때 실행될 함수
+
+          var sequence = Math.max(imgLength - imgLength, Math.min(Number((imgLength - imgLength - (imgLength - imgLength - imgLength * scrollPerecnt)).toFixed(0)), imgLength)); //이미지 시퀀스 번호 구합니다.
+
+          renderCanvas(sequence); //캔버스를 그리는 함수
+          contentIn(); //중간중간 나타나는 컨텐츠를 처리하는 함수
+
+        };
+
+        function renderCanvas(sequence) { //캔버스에 이미지를 그리는 함수
+
+          ctx.clearRect(0, 0, imgWidth, imgHeight); //지정한 x,y위치값과 넓이 높이 값을 넣어 캔버스를 클리어해줌
+          ctx.drawImage(imgArray[sequence], 0, 0, imgWidth, imgHeight); //이미지 배열에 담아둔 이미지를 캔버스에 그림
+
+        };
+
+        function contentIn() { //텍스트 등장을 처리하는 함수
+
+
+          if (percent >= 65) {
+            $('.name_txt').addClass('active');
+            $('.name_logo').addClass('active');
+            $('.name_canvas_wrap').addClass('active');
+          }
+          if (percent < 65) {
+            $('.name_txt').removeClass('active');
+            $('.name_logo').removeClass('active');
+            $('.name_canvas_wrap').removeClass('active');
+          }
+          if (percent >= 75) {
+            $('.hands-wrap').addClass('active');
+            $('.celebration').addClass('active');
+          }
+          if (percent < 75) {
+            $('.hands-wrap').removeClass('active');
+            $('.celebration').removeClass('active');
+          }
+
+
+        };
+
+        function bindEvent() { //이벤트를 바인드해주는 함수
+
+          $(window).scroll(function() {
+            setProperty()
+            scrollFunc(); //스크롤할때 실행될 함수
+
+          });
+
+          $(window).resize(function() {
+
+            setProperty(); //스크롤할때 변할 값들을 셋팅해주는 함수
+            setCanvas(); //캔버스 기본값 셋팅
+            scrollFunc(); //스크롤할때 실행될 함수
+
+          });
+        };
+
+        function init() { // 초기화
+
+          el.appendChild(canvas); // canvas_wrap 엘리먼트에 캔버스를 담아줌
+
+          for (var i = 0; i <= imgLength; i++) {
+
+            var img = new Image(); //이미지 객체 인스턴스 생성
+            var path = imgSrc + i + imgFormat; //이미지 패스 생성
+
+            img.src = path; //img에 패스 대입
+
+            img.onload = function() {
+              imageIterlator += 1; //이미지 로드 카운트 카운트
+              if (imageIterlator === imgLength) { //이미지가 로드된 횟수와 이미지 렝스가 같아질 경우에 인터렉션 함수들을 호출함
+
+                setProperty(); //스크롤할때 변할 값들을 셋팅해주는 함수
+                setCanvas(); //캔버스 기본값 셋팅
+                bindEvent(); //스크롤 이벤트 바인드
+                scrollFunc(); //스크롤할때 실행될 함수
+
+              };
+            }
+
+            imgArray.push(img); //이미지 배열에 이미지를 담음
+
+          };
+        };
+
+        init(); //start
+
+        $(window).scroll(function(event) {
+          didScroll = true;
+        });
+        setInterval(function() {
+          if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+          }
+        }, 250);
+
+        function hasScrolled() {
+          var st = $(this).scrollTop();
+          if (Math.abs(lastScrollTop - st) <= delta) return;
+          if (st > lastScrollTop && st > navbarHeight) {
+            $('.navbar').removeClass('nav-down').addClass('nav-up');
+          } else {
+            if (st + $(window).height() < $(document).height()) {
+              $('.navbar').removeClass('nav-up').addClass('nav-down');
+            }
+          }
+          lastScrollTop = st;
+        }
+
+      });
+    </script>
+    <!-- Information 스크롤 애니메이션 -->
+    <script type="text/javascript">
+      $(function() {
+
+        var scrollBody2 = $('#information'); //부모 스크롤 엘리먼트
+
+        var scrollHeight2; // 스크롤 높이
+        var sectionOffsetTop2; //섹션의 오프셋 탑 변수
+        var sectionScrolTop2; //섹션의 스크롤 탑 변수
+        var scrollRealHeight2; //실제로 스크롤해야될 높이를 담을 변수를 선업합니다
+        var winScrollTop2; // 스크롤바의 높이를 담을 변수를 선업합니다
+        var scrollPerecnt2; // 스크롤위치 / 스크롤 길이로 구한 비율 값
+        var percent2; // 스크롤 백분율값을 담을 변수를 선업합니다
+
+        var windowWdith2 = $(window).width(); // 화면의 넓이값
+        var mobileSize2 = 1024; //모바일로 변환된 사이즈 설정 (기기명으로 모바일버전을 체크하는게 아니라 스크린 사이즈가 1024보다 작을경우 모바일로 간주함)
+        var isMobile2; //화면사이즈가 모바일인지 체크하는 변수
+
+        var el2 = document.querySelector('.information_canvas_wrap'); //캔버스를 담을 요소
+        var canvas2 = document.createElement('canvas'); // 캔버스 생성
+        canvas2.setAttribute("class", "information_canvas");
+        var ctx2 = canvas2.getContext('2d'); //렌더링 컨텍스트 타입을 2d로 선언
+        var imgSrc2 = './img/information/infor'; //이미지의 경로 설정
+        var imgFormat2 = '.png'; // 이미지 포맷 설정
+        var imgLength2 = 167; // 총 이미지의 렝쓰
+        var pcImgSize2 = [1920, 1080]; // pc일때 이미지 사이즈 [가로,세로]
+        var mobileImgSize2 = [640, 360]; // mobile일때 이미지 사이즈 [가로,세로]
+        var imgWidth2; // 이미지 넓이
+        var imgHeight2; // 이미지 높이
+        var imgArray2 = []; // 이미지를 담을 배열
+        var imageIterlator2 = 0; // 이미지가 로드되었는지 체크하는 값
+
+        function setProperty() { //스크롤할때 변할 값들을 셋팅해주는 함수
+
+          scrollHeight2 = scrollBody2.height(); // 스크롤 높이
+          sectionOffsetTop2 = scrollBody2.offset().top; //섹션의 오프셋 탑 변수
+
+          scrollRealHeight2 = (scrollHeight2 - $(window).height()); //실제로 스크롤해야될 높이값을 구합니다
+          winScrollTop2 = $(window).scrollTop(); //스크롤바의 현재 위치를 구합니다
+          sectionScrolTop2 = winScrollTop2 - sectionOffsetTop2
+
+          scrollPerecnt2 = sectionScrolTop2 / scrollRealHeight2; // 스크롤위치 / 스크롤 길이로 구한 비율 값
+          percent2 = scrollPerecnt2 * 100; //백분율을 구합니다
+          /* 윗쪽 내용 지겹도록 설명했죠!! ^^;; */
+
+          windowWdith2 = $(window).width(); //윈도우의 넓이
+          isMobile2 = windowWdith2 > mobileSize2 ? false : true; //PC일경우 false, MOBILE일경우 true
+
+          imgWidth2 = !isMobile2 ? pcImgSize2[0] : mobileImgSize2[0]; // 이미지 넓이
+          imgHeight2 = !isMobile2 ? pcImgSize2[1] : mobileImgSize2[1];; // 이미지 높이
+
+        };
+
+        function setCanvas() { //캔버스 기본값 셋팅
+
+          canvas2.width = imgWidth2; //캔버스 넓이 세팅
+          canvas2.height = imgHeight2; //캔버스 높이 세팅를
+
+        };
+
+        function scrollFunc() { //스크롤할때 실행될 함수
+
+          var sequence2 = Math.max(imgLength2 - imgLength2, Math.min(Number((imgLength2 - imgLength2 - (imgLength2 - imgLength2 - imgLength2 * scrollPerecnt2)).toFixed(0)), imgLength2)); //이미지 시퀀스 번호 구합니다.
+
+          renderCanvas(sequence2); //캔버스를 그리는 함수
+          contentIn(); //중간중간 나타나는 컨텐츠를 처리하는 함수
+
+        };
+
+        function renderCanvas(sequence2) { //캔버스에 이미지를 그리는 함수
+
+          ctx2.clearRect(0, 0, imgWidth2, imgHeight2); //지정한 x,y위치값과 넓이 높이 값을 넣어 캔버스를 클리어해줌
+          ctx2.drawImage(imgArray2[sequence2], 0, 0, imgWidth2, imgHeight2); //이미지 배열에 담아둔 이미지를 캔버스에 그림
+
+        };
+
+        function contentIn() { //텍스트 등장을 처리하는 함수
+
+          if (percent2 >= 5 && percent2 < 41) {
+            $('.information_txt.pos1').addClass('active');
+          }
+          if (percent2 > 60 || percent2 < 5) {
+            $('.information_txt.pos1').removeClass('active');
+          }
+
+          if (percent2 >= 5 && percent2 <= 20) {
+            $('.information_txt.pos2').addClass('active');
+          }
+          if (percent2 > 20 || percent2 < 5) {
+            $('.information_txt.pos2').removeClass('active');
+          }
+
+          if (percent2 >= 21 && percent2 <= 40) {
+            $('.information_txt.pos3').addClass('active');
+          }
+          if (percent2 > 40 || percent2 < 21) {
+            $('.information_txt.pos3').removeClass('active');
+          }
+
+          if (percent2 >= 41 && percent2 <= 60) {
+            $('.information_txt.pos4').addClass('active');
+          }
+          if (percent2 > 60 || percent2 < 41) {
+            $('.information_txt.pos4').removeClass('active');
+          }
+
+          if (percent2 >= 61 && percent2 <= 80) {
+            $('.information_txt.pos5').addClass('active');
+          }
+          if (percent2 > 80 || percent2 < 61) {
+            $('.information_txt.pos5').removeClass('active');
+          }
+
+          if (percent2 >= 81) {
+            $('.information_txtL.pos6').addClass('active');
+          }
+          if (percent2 < 81) {
+            $('.information_txtL.pos6').removeClass('active');
+          }
+
+          if (percent2 >= 86) {
+            $('.information_txtL.pos7').addClass('active');
+          }
+          if (percent2 < 86) {
+            $('.information_txtL.pos7').removeClass('active');
+          }
+        };
+
+        function bindEvent() { //이벤트를 바인드해주는 함수
+
+          $(window).scroll(function() {
+            setProperty()
+            scrollFunc(); //스크롤할때 실행될 함수
+
+          });
+
+          $(window).resize(function() {
+
+            setProperty(); //스크롤할때 변할 값들을 셋팅해주는 함수
+            setCanvas(); //캔버스 기본값 셋팅
+            scrollFunc(); //스크롤할때 실행될 함수
+
+          });
+        };
+
+        function init() { // 초기화
+
+          el2.appendChild(canvas2); // canvas_wrap 엘리먼트에 캔버스를 담아줌
+
+          for (var i = 0; i <= imgLength2; i++) {
+
+            var img2 = new Image(); //이미지 객체 인스턴스 생성
+            var path2 = imgSrc2 + i + imgFormat2; //이미지 패스 생성
+
+            img2.src = path2; //img에 패스 대입
+
+            img2.onload = function() {
+              imageIterlator2 += 1; //이미지 로드 카운트 카운트
+              if (imageIterlator2 === imgLength2) { //이미지가 로드된 횟수와 이미지 렝스가 같아질 경우에 인터렉션 함수들을 호출함
+
+                setProperty(); //스크롤할때 변할 값들을 셋팅해주는 함수
+                setCanvas(); //캔버스 기본값 셋팅
+                bindEvent(); //스크롤 이벤트 바인드
+                scrollFunc(); //스크롤할때 실행될 함수
+
+              };
+            }
+
+            imgArray2.push(img2); //이미지 배열에 이미지를 담음
+
+          };
+        };
+
+        init(); //start
+      });
+    </script>
+    <script src="js/people.js" charset="utf-8"></script>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+#main {
+  width: 100%;
+  height: 1080px;
+  position: relative;
+  text-align: center;
+  margin: 0;
+}
+
+.section1_video{
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.hero-black {
+  width: 1920px;
+  height: 100%;
+  background: black;
+  z-index: 0;
+  margin: 0;
+}
+
+.mainVidThumb {
+  height: 100%;
+  z-index: 0;
+  opacity: .7;
+  margin: 0;
+}
+
+.hero-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 0;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+/* 동영상 모달 */
+input[id*="popup"] {
+  display: none;
+}
+
+input[id*="popup"]+label {
+  position: absolute;
+  display: inline-block;
+  /*padding: 20px;*/
+  background: #FFCD4C;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  padding: 16px 30px;
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  transition: all .2s;
+}
+
+.button-text{
+  margin: 0;
+  font-family: 'GmarketSansMedium';
+  font-size: 20px;
+  color: #5826E8;
+  transition: all .2s;
+}
+
+.button-box:hover{
+  background: #5826E8;
+}
+
+.button-box:hover .button-text{
+  color: #FFCD4C;
+}
+
+input[id*="popup"]:hover+label {
+  color: #FFCD4C;
+}
+
+input[id*="popup"]+label+div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+input[id*="popup"]+label+div>div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1280px;
+  height: 720px;
+  background: #FFCD4C;
+  z-index: 2;
+}
+
+input[id*="popup"]+label+div>div>label {
+  position: absolute;
+  top: -6px;
+  right: 0;
+  z-index: 1;
+  cursor: pointer;
+  opacity: .3;
+  transition: all .2s;
+  transform: translate(80px);
+}
+
+input[id*="popup"]+label+div>div>label>img{
+  width: 60px;
+}
+
+input[id*="popup"]+label+div>div>label:hover{
+  opacity: 1;
+}
+
+input[id*="popup"]+label+div>label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .6);
+  z-index: 1;
+}
+
+/*
+input[id*="popup"] + label + div {display:none;}
+input[id*="popup"]:checked + label + div {display:block;}
+*/
+input[id*="popup"]+label+div {
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s;
+}
+
+input[id*="popup"]:checked+label+div {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scrollDown {
+  z-index: .2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(897.5px, -200px);
+  opacity: 1;
+}

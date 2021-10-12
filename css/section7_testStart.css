@@ -1,0 +1,73 @@
+#testStart {
+  width: 1920px;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.section7-container {
+  height: 1500px;
+  background-image: url('../img/gradient-bg.jpg');
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section7-intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.test-button{
+  padding: 16px 30px;
+  background: #FFCD4C;
+  border: none;
+  cursor: pointer;
+  transition: all .2s;
+  margin-top: 24px;
+  border-radius: 4px;
+}
+
+.test-button a{
+  text-decoration: none;
+}
+
+.test-button-text{
+  font-family: 'GmarketSansMedium';
+  font-size: 20px;
+  color: #5826E8;
+  margin: 0;
+  padding-top: 4px;
+}
+
+.test-button:hover{
+  background: #5826E8;
+}
+
+.test-button:hover .test-button-text{
+  color: #FFCD4C;
+}
+
+.section7-bottom-img img{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+
+.movemeongt{
+  font-family: 'GmarketSansMedium';
+  font-size: 16px;
+  color: #5826E8;
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+  transform: translate(784.275px, -45px);
+}

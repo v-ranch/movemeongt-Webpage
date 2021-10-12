@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Movemeongt">
+  <meta name="keywords" content="무브멍트">
+  <meta name="description" content="무브멍트">
+
+  <!-- sns share -->
+  <meta property="og:url" content="https://movemeongt.netlify.app" />
+  <meta property="og:title" content="무브멍트 | 짧지만 위대한 시간" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="../img/share.png" />
+  <meta property="og:description" content="무브멍트 멍 유형 추천">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="../img/favicon.ico">
+
+  <title>무브멍트</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/default.css">
+  <link rel="stylesheet" href="../css/testPage.css">
+  <link rel="stylesheet" href="../css/testMain.css">
+  <link rel="stylesheet" href="../css/qna.css">
+  <link rel="stylesheet" href="../css/animation.css">
+  <link rel="stylesheet" href="../css/result.css">
+
+  <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+  <script>
+    Kakao.init('e26cbb4af01dbdae2c9e4b6004650975');
+    Kakao.isInitialized();
+  </script>
+</head>
+
+<body>
+  <div class="container-fluid p-0">
+
+    <!-- 네비게이션 -->
+    <nav class="navbar">
+      <div class="nav-container mx-auto">
+        <div class="nav-logo">
+          <a href="index.html">
+            <img src="../img/MVMT_Logo_nosub.svg" alt="img/svg">
+          </a>
+        </div>
+        <div class="nav-menu-container">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#name">무브멍트</a>
+            </li>
+            <li class="nav-blank">
+              <img src="../img/nav-blank.svg" alt="img/svg">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#character">단원소개</a>
+            </li>
+            <li class="nav-blank">
+              <img src="../img/nav-blank.svg" alt="img/svg">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#information">DMN</a>
+            </li>
+            <li class="nav-blank">
+              <img src="../img/nav-blank.svg" alt="img/svg">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#people">멍때리는이유</a>
+            </li>
+            <li class="nav-blank">
+              <img src="../img/nav-blank.svg" alt="img/svg">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#howTo">멍때리는방법</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- 섹션8 -->
+    <section id="testMain" class="mx-auto">
+
+      <div class="test-container mx-auto">
+        <div class="test-contents">
+          <figure class="testMain-logo">
+            <img src="../img/MVMT_Logo_nosub_p.svg" alt="img/svg">
+          </figure>
+
+          <p class="testMain-title">
+            지금은<br>어떤 멍을 때려볼까?
+          </p>
+          <p class="testMain-description">
+            무브멍트에 입단하고 싶다면<br>
+            우리가 추천해주는 멍을 때려봐!
+          </p>
+          <button type="button" class="btn btn-primary" onclick="js:gotest()">
+            <p class="testMain-button-text">멍 추천 테스트 시작하기</p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션9 -->
+    <section id="qna">
+      <div class="test-container mx-auto">
+        <div class="test-contents">
+
+          <div class="status">
+            <div class="statusBar"></div>
+          </div>
+
+          <div class="qBox">
+          </div>
+
+          <div class="answerBox">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션10 -->
+    <section id="result">
+      <div class="test-container mx-auto">
+        <div class="test-contents">
+          <div class="result-MVMTlogo"></div>
+          <div class="result-title"></div>
+          <div class="resultname">
+
+          </div>
+
+          <div id="resultImg">
+
+          </div>
+          <div class="result-img-caption"></div>
+
+          <div class="resultDesc">
+
+          </div>
+
+            <button type="button" class="share mt-3 btn-lg" onclick="js:setShare()">공유하기</button>
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+    <script src="../js/jquery.1.12.4.js"></script>
+    <script src="../js/data.js" charset="utf-8"></script>
+    <script src="../js/start.js" charset="utf-8"></script>
+    <script src="../js/share.js" charset="utf-8"></script>
+
+  </div>
+</body>
+
+</html>

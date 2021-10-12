@@ -1,0 +1,125 @@
+#result {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  color: #333333;
+  background-image: url('../img/test-bg.jpg');
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#shareResult {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  color: #333333;
+  background-image: url('../img/test-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*
+    position: relative;
+    color: #FFCD4C;
+    width: 80%;
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;*/
+}
+
+#result .test-contents {
+  justify-content: flex-start;
+  margin-top: 200px;
+}
+
+.resultname {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.resultDesc {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.desc-title{
+  font-family: 'GmarketSansBold';
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.desc-text{
+  font-family: 'GmarketSansMedium';
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 6px;
+}
+
+.desc-others-wrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 6px;
+}
+
+.desc-others{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.others-img img{
+  width: 65px;
+}
+
+
+/* highlight color*/
+.desc-title .highlight{
+  color: #5826E8;
+}
+
+.desc-text-highlight{
+  font-family: 'GmarketSansMedium';
+  font-size: 16px;
+  line-height: 26px;
+  color: #5826E8;
+  margin-top: 6px;
+}
+
+
+/* pause */
+ .share {
+  color: #f2f3f5;
+  background-color: #5826E8;
+  border-color: #5826E8;
+  font-size: 20px;
+  border: 0px;
+}
+
+.share:hover, .share:focus {
+  background-color: black;
+  color: #f2f3f5;
+}
+
+.gohome {
+  color: #f2f3f5;
+  background-color: #5826E8;
+  border-color: #5826E8;
+  font-size: 20px;
+  border: 0px;
+}
+
+.gohome:hover, .gohome:focus {
+  background-color: black;
+  color: #f2f3f5;
+}
