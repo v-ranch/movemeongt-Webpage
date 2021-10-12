@@ -6,13 +6,17 @@ html, body{
 }
 
 body{
-    overflow-x: hidden;
+    background-image: url('../img/test-bg.jpg');
+    position: relative;
+    background-position: center;
+    background-size: contain;
+    background-attachment: scroll;
 }
 
 .container{
-  height: 100%;
-  width: 100%;
+  width: 100vw;
   position: relative;
+
 }
 
 /* font */

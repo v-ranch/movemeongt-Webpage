@@ -5,11 +5,6 @@
   position: relative;
   text-align: center;
   color: #5826E8;
-  background-image: url('../img/test-bg.jpg');
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .status {
