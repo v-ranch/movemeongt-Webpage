@@ -44,13 +44,13 @@
   <div class="container-fluid p-0">
 
     <!-- 테스트 바로가기 -->
+
     <div class="test-fastgo">
       <div class="fastgo-box">
         <figure class="fastgo-logo">
           <img src="img/sm_logo.svg" alt="img.svg">
         </figure>
         <a class="fastgo-text" href="testPage/testPage.html"><span>테스트</span><br>바로가기</a>
-
       </div>
     </div>
 
@@ -101,9 +101,9 @@
     <section id="main">
 
       <!-- 섹션1 - 메인비디오썸네일 -->
-      <figure class="section1_video">
+      <figure class="section1_thumbnail mx-auto">
         <div class="hero-black">
-          <img class="mainVidThumb img-fluid mx-auto" src="img/hero_bgimg.jpg" alt="img/jpg">
+          <img class="mainVidThumb mx-auto" src="img/hero_bgimg.jpg" alt="img/jpg">
         </div>
 
         <!--동영상 재생 -->
@@ -115,7 +115,7 @@
       <!--타이틀 -->
       <div class="hero-wrap">
         <figure class="hero-title m-0">
-          <img src="img/hero_title.svg" alt="img/svg">
+          <img class="hero-title-img img-fluid" src="img/hero_title.svg" alt="img/svg">
         </figure>
       </div>
 
@@ -129,7 +129,14 @@
           <label for="popup">
             <img src="img/close.svg" alt="img/svg">
           </label>
-          <iframe src="https://player.vimeo.com/video/434594132?h=a6e3f18e63&title=0&byline=0&portrait=0" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          <div style="padding:56.25% 0 0 0;position:relative;">
+            <iframe src="https://player.vimeo.com/video/434594132?h=a6e3f18e63&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <script src="https://player.vimeo.com/api/player.js"></script>
+
+          <!--
+          <iframe src="https://player.vimeo.com/video/434594132?h=a6e3f18e63&title=0&byline=0&portrait=0" width="1280" height="691" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>-->
         </div>
         <label for="popup"></label>
       </div>
@@ -153,15 +160,15 @@
             </figure>
           </div>
 
-          <div class="flex_box">
+          <div class="flex_box mx-auto">
             <div class="name-logo-wrap">
               <figure class="name_logo active">
                 <img src="img/MVMT_Logo.svg" alt="img/svg">
               </figure>
               <div class="name_txt active my-0">
                 <div class="korean">
-                  바쁘게 살아가는 현대인에게 멍의 필요성과 다양한 멍때리기 방법을<br>
-                  소개하며 좀 더 많은 사람들이 멍을 때릴 수 있도록 <span>계멍운동</span>을 펼치는 단체
+                  바쁘게 살아가는 현대인에게 멍의 필요성과 다양한 멍때리기 방법을 소개하며
+                  <br>좀 더 많은 사람들이 멍을 때릴 수 있도록 <span>계멍운동</span>을 펼치는 단체
                 </div>
                 <div class="english">
                   An organization that introduces the need for spacing out and various ways of spacing out to modern people living busy lives and conducts a enlightenment movement so that more people can space out.

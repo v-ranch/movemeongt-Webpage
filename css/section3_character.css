@@ -18,6 +18,11 @@
   align-items: center;
   z-index: 1;
   margin: 0;
+  width: 100%;
+}
+
+.character-top img{
+  width: 100%;
 }
 
 .character-bottom{
@@ -26,6 +31,11 @@
   align-items: center;
   z-index: 2;
   margin:0;
+  width: 100%;
+}
+
+.character-bottom img{
+  width: 100%;
 }
 
 .character-contents{
