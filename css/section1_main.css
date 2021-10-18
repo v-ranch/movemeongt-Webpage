@@ -8,7 +8,7 @@
 }
 
 .section1_thumbnail {
-  width: 1920px;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
