@@ -214,7 +214,7 @@
             </div>
             <div class="intro-img2D">
 
-                <img class="img-fluid" src="img/character-intro-img.svg" alt="img.svg">
+              <img class="img-fluid" src="img/character-intro-img.svg" alt="img.svg">
 
             </div>
             <div class="intro-description">
@@ -465,7 +465,7 @@
           </div>
           <div class="intro-description">
             <p>무브멍트랑 같이 계멍운동하지 않을래?<br>
-              입단 테스트를 하면 지금 어떤 멍을 때리면 좋을지<br>우리가 추천해줄게!</p>
+              입단 테스트를 하면 지금 어떤 멍을 때리면 좋을지 우리가 추천해줄게!</p>
           </div>
         </div>
 
@@ -546,58 +546,60 @@
 
         };
 
-        function setCanvas() { //캔버스 기본값 셋팅
+        //    function setCanvas() { //캔버스 기본값 셋팅
 
-          canvas.width = imgWidth; //캔버스 넓이 세팅
-          canvas.height = imgHeight; //캔버스 높이 세팅를
+        //    canvas.width = imgWidth; //캔버스 넓이 세팅
+        //      canvas.height = imgHeight; //캔버스 높이 세팅를
 
-        };
+        //    };
 
         function scrollFunc() { //스크롤할때 실행될 함수
 
           var sequence = Math.max(imgLength - imgLength, Math.min(Number((imgLength - imgLength - (imgLength - imgLength - imgLength * scrollPerecnt)).toFixed(0)), imgLength)); //이미지 시퀀스 번호 구합니다.
 
-          renderCanvas(sequence); //캔버스를 그리는 함수
+          //    renderCanvas(sequence); //캔버스를 그리는 함수
           contentIn(); //중간중간 나타나는 컨텐츠를 처리하는 함수
 
         };
 
-        function renderCanvas(sequence) { //캔버스에 이미지를 그리는 함수
+        //  function renderCanvas(sequence) { //캔버스에 이미지를 그리는 함수
 
-          ctx.clearRect(0, 0, imgWidth, imgHeight); //지정한 x,y위치값과 넓이 높이 값을 넣어 캔버스를 클리어해줌
-          ctx.drawImage(imgArray[sequence], 0, 0, imgWidth, imgHeight); //이미지 배열에 담아둔 이미지를 캔버스에 그림
+        //      ctx.clearRect(0, 0, imgWidth, imgHeight); //지정한 x,y위치값과 넓이 높이 값을 넣어 캔버스를 클리어해줌
+        //      ctx.drawImage(imgArray[sequence], 0, 0, imgWidth, imgHeight); //이미지 배열에 담아둔 이미지를 캔버스에 그림
 
-        };
+        //    };
 
         function contentIn() { //텍스트 등장을 처리하는 함수
 
 
-          if (percent >= 65) {
-            $('.name_txt').addClass('active');
+          if (percent >= 1) {
             $('.name_logo').addClass('active');
-            $('.name_canvas_wrap').addClass('active');
           }
-          if (percent < 65) {
-            $('.name_txt').removeClass('active');
+
+          if (percent < 1) {
             $('.name_logo').removeClass('active');
-            $('.name_canvas_wrap').removeClass('active');
           }
-          if (percent >= 75) {
+
+          if (percent >= 15) {
+            $('.name_txt').addClass('active');
+          }
+          if (percent < 15) {
+            $('.name_txt').removeClass('active');
+          }
+          if (percent >= 30) {
             $('.hands-wrap').addClass('active');
             $('.celebration').addClass('active');
           }
-          if (percent < 75) {
+          if (percent < 30) {
             $('.hands-wrap').removeClass('active');
             $('.celebration').removeClass('active');
           }
-
-
         };
 
         function bindEvent() { //이벤트를 바인드해주는 함수
 
           $(window).scroll(function() {
-            setProperty()
+            setProperty();
             scrollFunc(); //스크롤할때 실행될 함수
 
           });
@@ -605,7 +607,7 @@
           $(window).resize(function() {
 
             setProperty(); //스크롤할때 변할 값들을 셋팅해주는 함수
-            setCanvas(); //캔버스 기본값 셋팅
+            //      setCanvas(); //캔버스 기본값 셋팅
             scrollFunc(); //스크롤할때 실행될 함수
 
           });
@@ -627,7 +629,7 @@
               if (imageIterlator === imgLength) { //이미지가 로드된 횟수와 이미지 렝스가 같아질 경우에 인터렉션 함수들을 호출함
 
                 setProperty(); //스크롤할때 변할 값들을 셋팅해주는 함수
-                setCanvas(); //캔버스 기본값 셋팅
+                //      setCanvas(); //캔버스 기본값 셋팅
                 bindEvent(); //스크롤 이벤트 바인드
                 scrollFunc(); //스크롤할때 실행될 함수
 
