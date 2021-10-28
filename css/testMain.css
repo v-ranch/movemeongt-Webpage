@@ -47,13 +47,13 @@
 .testMain-description {
   font-family: 'GmarketSansMedium';
   font-size: 20px;
-  margin-top: 12px;
+  margin-top: 20px;
 }
 
 .btn {
   background-color: #5826E8;
   border: none;
-  border-radius: 4px;
+  border-radius: 100px;
   padding: 0;
   margin-top: 36px;
 }
@@ -74,4 +74,81 @@
 .btn:hover .testMain-button-text {
   color: #FFCD4C;
   font-family: 'GmarketSansBold';
+}
+
+@media (max-width: 480px) {
+  #testMain {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: relative;
+    text-align: center;
+    color: #5826E8;
+  }
+
+  .test-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .test-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+  }
+
+  .testMain-logo {
+    width: 125px;
+    margin-bottom: 0;
+  }
+
+  .testMain-logo img {
+    width: 100%;
+  }
+
+  .testMain-title {
+    font-family: 'GmarketSansBold';
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -3px;
+    margin-top: 32px;
+    margin-bottom: 0;
+  }
+
+
+  .btn {
+    background-color: #5826E8;
+    border: none;
+    border-radius: 100px;
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  .btn:hover, .btn:focus{
+    background: #333333;
+    border:none;
+  }
+
+  .testMain-button-text {
+    font-family: 'GmarketSansMedium';
+    font-size: 20px;
+    color: #f2f3f5;
+    margin: 0;
+    padding-bottom: 14px;
+    padding-top: 16px;
+    padding-left, padding-right: 30px;
+  }
+
+  .btn:hover .testMain-button-text {
+    color: #FFCD4C;
+    font-family: 'GmarketSansBold';
+  }
 }

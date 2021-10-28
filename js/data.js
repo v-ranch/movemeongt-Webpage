@@ -11,7 +11,7 @@
 
 const qnaList = [
   {
-    q: '<div class="qna-circle"><img src="../img/water_2d.png" alt="img/png"></div><div class="qText">지금의 너는<br>어떤 모습에 가까울까?</div>',
+    q: '<div class="qna-circle"><img src="../img/water_2d.png" alt="img/png"></div><div class="qText">지금의 너는<br>어떤 모습에 가까워?</div>',
     a: [
       { answer: '방 안에 놓인 어항', type: [0, 5] },
       { answer: '햇빛을 받고 있는 꽃', type: [6, 7] },
@@ -29,16 +29,16 @@ const qnaList = [
     ]
   },
   {
-    q: '<div class="qna-circle"><img src="../img/sky_2d.png" alt="img/png"></div><div class="qText">지금 듣고 싶은 소리는 무엇일까?</div>',
+    q: '<div class="qna-circle"><img src="../img/sky_2d.png" alt="img/png"></div><div class="qText">지금 어떤 소리를<br>듣고 싶어?</div>',
     a: [
-      { answer: '창문 틈으로 들리는 참새 소리', type: [0, 3] },
-      { answer: '작은 빛을 내는 인센스스틱', type: [4, 6] },
+      { answer: '창틈으로 들리는 참새 소리', type: [0, 3] },
+      { answer: '빛을 내며 타는 인센스스틱', type: [4, 6] },
       { answer: '도로 위를 두들기는 빗소리', type: [2, 5] },
       { answer: '나무 장작 타는 소리', type: [7, 1] },
     ]
   },
   {
-    q: '<div class="qna-circle"><img src="../img/plant_2d.png" alt="img/png"></div><div class="qText">혼자서 걷는다면<br>어디를 걷고 싶을까?</div>',
+    q: '<div class="qna-circle"><img src="../img/plant_2d.png" alt="img/png"></div><div class="qText">혼자서 걷는다면<br>어디를 걷고 싶어?</div>',
     a: [
       { answer: '콘크리트 건물 사이 골목', type: [2, 0] },
       { answer: '불꽃놀이가 펼쳐지는 바닷가', type: [1, 5] },
@@ -47,7 +47,7 @@ const qnaList = [
     ]
   },
   {
-    q: '<div class="qna-circle"><img src="../img/smoke_2d.png" alt="img/png"></div><div class="qText">필름이 한 장만 남았다면 무엇을 찍을까?</div>',
+    q: '<div class="qna-circle"><img src="../img/smoke_2d.png" alt="img/png"></div><div class="qText">필름이 한 장만 남았다면<br>어떤 사진을 찍을거야?</div>',
     a: [
       { answer: '초 끝에 남은 연기', type: [1, 4] },
       { answer: '하늘이 비치는 연못', type: [3, 5]},
@@ -57,7 +57,7 @@ const qnaList = [
   },
 
   {
-    q: '<div class="qna-circle"><img src="../img/light_2d.png" alt="img/png"></div><div class="qText">어떤 선물을<br>주거나 받고 싶을까?</div>',
+    q: '<div class="qna-circle"><img src="../img/light_2d.png" alt="img/png"></div><div class="qText">어떤 선물을<br>주거나 받고 싶어?</div>',
     a: [
       { answer: '물병에 담긴 꽃다발', type: [5, 7] },
       { answer: '도심이 보이는 전망대 티켓', type: [2, 3] },
@@ -67,22 +67,22 @@ const qnaList = [
   },
 
   {
-    q: '<div class="qna-circle"><img src="../img/fire_2d.png" alt="img/png"></div><div class="qText">잠시 멈춰 서있고 싶은 곳은 어디일까?</div>',
+    q: '<div class="qna-circle"><img src="../img/fire_2d.png" alt="img/png"></div><div class="qText">잠시 멈춰있고 싶은 곳을<br>골라볼래?</div>',
     a: [
       { answer: '횡단보도 옆 가로수', type: [2, 7] },
       { answer: '파도가 반짝이는 바다', type: [5, 6] },
-      { answer: '따뜻한 벽난로', type: [0, 1] },
+      { answer: '따뜻한 벽난로 근처', type: [0, 1] },
       { answer: '구름 연기를 뿜는 굴뚝 앞', type: [3, 4] },
     ]
   },
 
   {
-    q: '<div class="qna-circle"><img src="../img/wall_2d.png" alt="img/png"></div><div class="qText">마지막으로<br>지금 너의 상태는 어때?</div>',
+    q: '<div class="qna-circle"><img src="../img/wall_2d.png" alt="img/png"></div><div class="qText">마지막으로,<br>지금 너의 상태는 어때?</div>',
     a: [
-      { answer: '여유롭고 즐거워', type: [1, 4, 5, 6, 7] },
-      { answer: '생각이 복잡해', type: [2, 3, 8] },
-      { answer: '너무 지쳤어', type: [2, 3, 8] },
-      { answer: '기분이 좋아', type: [1, 4, 5, 6, 7] },
+      { answer: '여유롭고 즐거워^0^!', type: [1, 4, 5, 6, 7] },
+      { answer: '생각이 복잡해...', type: [2, 3, 8] },
+      { answer: '너무 지쳤어 ㅠㅠ', type: [2, 3, 8] },
+      { answer: '기분이 매우 좋아 :)', type: [1, 4, 5, 6, 7] },
     ]
   }
 ]
