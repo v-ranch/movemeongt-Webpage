@@ -459,24 +459,28 @@
     padding-top: 60px;
   }
 
+  .hands-wrap.active{
+    transform: translateY(25%);
+  }
+
   .hands-wrap img {
     width: 100%;
   }
 
   .celebration {
     width: 90%;
-    transform: translate(-50%, -220%);
-    -webkit-transform: translate(-50%, -220%);
-    -moz-transform: translate(-50%, -220%);
-    -o-transform: translate(-50%, -220%);
-    -ms-transform: translate(-50%, -220%);
+    transform: translate(-50%, -340%);
+    -webkit-transform: translate(-50%, -340%);
+    -moz-transform: translate(-50%, -340%);
+    -o-transform: translate(-50%, -340%);
+    -ms-transform: translate(-50%, -340%);
   }
 
   .celebration.active {
-    transform: translate(-50%, -200%);
-    -webkit-transform: translate(-50%, -200%);
-    -moz-transform: translate(-50%, -200%);
-    -o-transform: translate(-50%, -200%);
-    -ms-transform: translate(-50%, -200%);
+    transform: translate(-50%, -300%);
+    -webkit-transform: translate(-50%, -300%);
+    -moz-transform: translate(-50%, -300%);
+    -o-transform: translate(-50%, -300%);
+    -ms-transform: translate(-50%, -300%);
   }
 }
