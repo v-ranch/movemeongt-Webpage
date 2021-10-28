@@ -1,5 +1,5 @@
 #howTo {
-  width: 1920px;
+  width: 100%;
   height: 100%;
   position: relative;
   background-color: #f2f3f5;
@@ -156,33 +156,21 @@
 }
 
 /* 배경 요소 */
-.appletree{
+.appletree {
   margin: 0;
   position: absolute;
   top: 0;
   right: 0;
 }
 
-.howTo-BG-character{
+.howTo-BG-character {
   margin: 0;
   position: absolute;
   bottom: 0;
   left: 0;
 }
 
-.apple-fall{
-  margin: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(-145px, 240px);
-}
-
-.apple-fall img{
-  width: 30%;
-}
-
-.apple-big{
+.apple-big {
   margin: 0;
   position: absolute;
   top: 0;
@@ -191,7 +179,7 @@
   z-index: 2;
 }
 
-.apple-regular{
+.apple-regular {
   margin: 0;
   position: absolute;
   top: 0;
@@ -200,6 +188,545 @@
   z-index: 2;
 }
 
-.apple-regular img{
+.apple-regular img {
   width: 60%;
+}
+
+@media (max-width: 1024px) {
+
+  /*.section6-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }*/
+  /*  .section6_textbox {
+    display: flex;
+    flex-direction: row;
+    color: #FFCD4C;
+    text-align: center;
+    margin-top: 300px;
+  }*/
+  .section6_textbox img {
+    margin-top: 12px;
+    height: 70px;
+  }
+
+  .section6_textbox p {
+    font-size: 55px;
+    letter-spacing: -5px;
+    margin: 0;
+  }
+
+  .section6-description {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .ways_grid {
+    position: relative;
+    width: 760px;
+    height: 296px;
+    margin-top: 60px;
+    z-index: 1;
+    transform: skewX(10deg);
+    margin-bottom: 150px;
+  }
+
+  .way_box1 {
+    padding: 16.5px 11.5px 106.5px 0px;
+  }
+
+  .way_box2 {
+    padding: 106.5px 11.5px 16.5px 11.5px;
+  }
+
+  .way_box3 {
+    padding: 16.5px 11.5px 106.5px 11.5px;
+  }
+
+  .way_box4 {
+    padding: 106.5px 0px 16.5px 11.5px;
+  }
+
+  .up {
+    transition: all .2s;
+    overflow: hidden;
+  }
+
+  #howTo .up:hover {
+    transform: translateY(-15px);
+    transition: all .2s;
+  }
+
+  #howTo .up:hover .way {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .5);
+  }
+
+  .way {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0);
+    transition: all .3s;
+  }
+
+  /* 박스 안 이미지 */
+  .way_box1 img {
+    width: 360%;
+    position: absolute;
+    z-index: 0;
+    transform: skewX(-10deg) translate(-38%, -40%);
+  }
+
+  .way_box2 img {
+    width: 300%;
+    position: absolute;
+    z-index: 0;
+    transform: skewX(-10deg) translate(-42%, -31%);
+  }
+
+  .way_box3 img {
+    width: 250%;
+    position: absolute;
+    z-index: 0;
+    transform: skewX(-10deg) translate(-45%, -15%);
+  }
+
+  .way_box4 img {
+    width: 420%;
+    position: absolute;
+    z-index: 0;
+    transform: skewX(-10deg) translate(-74%, -40%);
+  }
+
+  #howTo .textBox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #5826E8;
+    opacity: .7;
+    z-index: 1;
+  }
+
+  .waybox_wrap {
+    opacity: 0;
+  }
+
+  #howTo .up:hover .waybox_wrap {
+    opacity: 1;
+  }
+
+  #howTo .waytext {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) skewX(-10deg);
+    width: 85%;
+    color: #f2f3f5;
+    font-family: 'GmarketSansMedium';
+    font-size: 12px;
+    padding-left: 4px;
+  }
+
+  #howTo .waytext span {
+    color: #FFCD4C;
+    font-size: 14px;
+    font-family: 'GmarketSansBold';
+    margin-left: -4px;
+  }
+
+  /* 배경 요소 */
+  .appletree {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75%;
+  }
+
+  .howTo-BG-character {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .howTo-BG-character img {
+    width: 50%;
+  }
+
+  .apple-big {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-35%, 760%);
+    z-index: 2;
+    width: 100px;
+  }
+
+  .apple-big img {
+    width: 100%;
+  }
+
+  .apple-regular {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .section6_textbox {
+   display: flex;
+   flex-direction: row;
+   color: #FFCD4C;
+   text-align: center;
+   margin-top: 200px;
+ }
+
+  .section6-description {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .ways_grid {
+    position: relative;
+    width: 500px;
+    height: 516px;
+    margin-top: 60px;
+    z-index: 1;
+    transform: skewX(10deg);
+    margin-bottom: 150px;
+    flex-wrap: wrap;
+  }
+
+  .way_box1 {
+    padding: 16.5px 11.5px 6.5px 0px;
+    flex-basis: 250px;
+  }
+
+  .way_box2 {
+    padding: 6.5px 11.5px 16.5px 11.5px;
+    flex-basis: 250px;
+  }
+
+  .way_box3 {
+    padding: 16.5px 11.5px 6.5px 11.5px;
+    flex-basis: 250px;
+  }
+
+  .way_box4 {
+    padding: 6.5px 0px 16.5px 11.5px;
+    flex-basis: 250px;
+  }
+
+  .up {
+    transition: all .2s;
+    overflow: hidden;
+  }
+
+  #howTo .up:hover {
+    transform: translateY(-15px);
+    transition: all .2s;
+  }
+
+  #howTo .up:hover .way {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .4);
+  }
+
+  .way {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+    transition: all .3s;
+  }
+
+  /* 박스 안 이미지 */
+/*  .way_box1 img {
+    width: 360%;
+    position: absolute;
+    z-index: 0;
+    transform: skewX(-10deg) translate(-38%, -40%);
+  }
+
+  .way_box2 img {
+    width: 300%;
+    position: absolute;
+    z-index: 0;
+    transform: skewX(-10deg) translate(-42%, -31%);
+  }
+
+  .way_box3 img {
+    width: 250%;
+    position: absolute;
+    z-index: 0;
+    transform: skewX(-10deg) translate(-45%, -15%);
+  }
+
+  .way_box4 img {
+    width: 420%;
+    position: absolute;
+    z-index: 0;
+    transform: skewX(-10deg) translate(-74%, -40%);
+  }*/
+
+  #howTo .textBox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #5826E8;
+    opacity: .7;
+    z-index: 1;
+  }
+
+  .waybox_wrap {
+    opacity: 0;
+  }
+
+  #howTo .up:hover .waybox_wrap {
+    opacity: 1;
+  }
+
+  #howTo .waytext {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) skewX(-10deg);
+    width: 85%;
+    color: #f2f3f5;
+    font-family: 'GmarketSansMedium';
+    font-size: 16px;
+    padding-left: 4px;
+  }
+
+  #howTo .waytext span {
+    color: #FFCD4C;
+    font-size: 18px;
+    font-family: 'GmarketSansBold';
+    margin-left: -4px;
+  }
+
+  /* 배경 요소 */
+  .appletree {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+  }
+
+  .howTo-BG-character {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .howTo-BG-character img {
+    width: 50%;
+  }
+
+  .apple-fall {
+    display: none;
+  }
+
+  .apple-big {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-35%, 450%);
+    z-index: 2;
+    width: 100px;
+  }
+
+  .apple-big img {
+    width: 100%;
+  }
+
+  .apple-regular {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .section6_textbox img {
+    margin-top: 8px;
+    height: 46px;
+  }
+
+  .section6_textbox p {
+    font-size: 36px;
+    letter-spacing: -2px;
+  }
+
+  .section6_textbox {
+   display: flex;
+   flex-direction: row;
+   color: #FFCD4C;
+   text-align: center;
+   margin-top: 120px;
+ }
+
+  .section6-description {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .ways_grid {
+    position: relative;
+    width: 320px;
+    height: 1296px;
+    margin-top: 30px;
+    z-index: 1;
+    transform: none;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+
+  .way_box1 {
+    padding: 20px;
+    flex-basis: 320px;
+    transform: skewX(10deg);
+  }
+
+  .way_box2 {
+    padding: 20px;
+    flex-basis: 320px;
+    transform: skewX(10deg);
+  }
+
+  .way_box3 {
+    padding: 20px;
+    flex-basis: 320px;
+    transform: skewX(10deg);
+  }
+
+  .way_box4 {
+    padding: 20px;
+    flex-basis: 320px;
+    transform: skewX(10deg);
+  }
+
+  .up {
+    transition: all .2s;
+    overflow: hidden;
+  }
+
+  #howTo .up:hover{
+    transform: translateY(0px);
+    transition: all .2s;
+    transform: skewX(10deg);
+  }
+
+  #howTo .up:hover .way {
+    box-shadow: none;
+  }
+
+  .way {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: none;
+    transition: all .3s;
+  }
+
+  /* 박스 안 이미지 */
+/*  .way_box1 img {
+    width: 360%;
+    position: absolute;
+    z-index: 0;
+    transform: skewX(-10deg) translate(-38%, -40%);
+  }
+
+  .way_box2 img {
+    width: 300%;
+    position: absolute;
+    z-index: 0;
+    transform: skewX(-10deg) translate(-42%, -31%);
+  }
+
+  .way_box3 img {
+    width: 250%;
+    position: absolute;
+    z-index: 0;
+    transform: skewX(-10deg) translate(-45%, -15%);
+  }
+
+  .way_box4 img {
+    width: 420%;
+    position: absolute;
+    z-index: 0;
+    transform: skewX(-10deg) translate(-74%, -40%);
+  }*/
+
+  #howTo .textBox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #5826E8;
+    opacity: .7;
+    z-index: 1;
+  }
+
+  .waybox_wrap {
+    opacity: 0;
+  }
+
+  #howTo .up:hover .waybox_wrap {
+    opacity: 1;
+  }
+
+  #howTo .waytext {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) skewX(-10deg);
+    width: 85%;
+    color: #f2f3f5;
+    font-family: 'GmarketSansMedium';
+    font-size: 16px;
+    padding-left: 4px;
+  }
+
+  #howTo .waytext span {
+    color: #FFCD4C;
+    font-size: 20px;
+    font-family: 'GmarketSansBold';
+    margin-left: -4px;
+  }
+
+  /* 배경 요소 */
+  .appletree {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+  }
+
+  .howTo-BG-character {
+display: none;
+  }
+
+  .apple-fall {
+    display: none;
+  }
+
+  .apple-big {
+  display: none;
+  }
+
+
+  .apple-regular {
+    display: none;
+  }
 }

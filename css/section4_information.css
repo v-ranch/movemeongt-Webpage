@@ -29,13 +29,14 @@
 
 #information .information_fix_wrap .information_cont_box .information_canvas_wrap {
   position: relative;
-/*  width: 100%;*/
+ /*width: 100vh;*/
   height: 100vh;
+  overflow: hidden;
 }
 
 #information .information_fix_wrap .information_cont_box .information_canvas_wrap .information_canvas {
   position: absolute;
-  height: 100vh;
+  /*height: 100vh;*/
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -154,6 +155,10 @@
     -moz-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);*/
+  }
+
+  #information .information_fix_wrap .information_cont_box .information_canvas_wrap .information_canvas {
+    height: 100vh;
   }
 
   /* text area */
