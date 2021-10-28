@@ -6,7 +6,7 @@
 }
 
 .section7-container {
-  height: 1500px;
+  height: 1400px;
   background-image: url('../img/gradient-bg.jpg');
   position: relative;
   background-position: center;
@@ -22,7 +22,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .test-button{
@@ -32,7 +32,7 @@
   cursor: pointer;
   transition: all .2s;
   margin-top: 24px;
-  border-radius: 4px;
+  border-radius: 100px;
 }
 
 .test-button a{
@@ -61,14 +61,132 @@
   bottom: 0;
 }
 
-
 .movemeongt{
   font-family: 'GmarketSansMedium';
   font-size: 16px;
-  color: #FFCD4C;
+  color: #f2f3f5;
   position: absolute;
   bottom: 0;
   z-index: 3;
   left: 50%;
-  transform: translate(-50%, -80%);
+  transform: translate(-50%, -150%);
+}
+
+@media (max-width: 1024px) {
+  .section7-container {
+    height: 910px;
+
+  }
+
+  .section7-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  .test-button{
+    padding: 10px 24px;
+    background: #FFCD4C;
+    border: none;
+    cursor: pointer;
+    transition: all .2s;
+    margin-top: 24px;
+    border-radius: 100px;
+  }
+
+  .test-button a{
+    text-decoration: none;
+  }
+
+  .test-button-text{
+    font-size: 16px;
+    padding-top: 4px;
+  }
+
+
+  .movemeongt{
+    font-size: 12px;
+    transform: translate(-50%, -140%);
+  }
+}
+
+@media (max-width: 768px) {
+  .section7-container {
+    height: 785px;
+
+  }
+
+  .section7-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  .test-button{
+    padding: 10px 24px;
+    background: #FFCD4C;
+    border: none;
+    cursor: pointer;
+    transition: all .2s;
+    margin-top: 20px;
+    border-radius: 100px;
+  }
+
+  .test-button a{
+    text-decoration: none;
+  }
+
+  .test-button-text{
+    font-size: 16px;
+    padding-top: 4px;
+  }
+
+
+  .movemeongt{
+    font-size: 12px;
+    transform: translate(-50%, -80%);
+  }
+}
+
+@media (max-width: 480px) {
+  .section7-container {
+    height: 560px;
+
+  }
+
+  .section7-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  .test-button{
+    padding: 10px 24px;
+    background: #FFCD4C;
+    border: none;
+    cursor: pointer;
+    transition: all .2s;
+    margin-top: 20px;
+    border-radius: 100px;
+  }
+
+  .test-button a{
+    text-decoration: none;
+  }
+
+  .test-button-text{
+    font-size: 16px;
+    padding-top: 4px;
+  }
+
+
+  .movemeongt{
+    display: none;
+  }
 }

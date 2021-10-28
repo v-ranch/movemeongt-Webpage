@@ -380,12 +380,12 @@
 
 @media (max-width: 768px) {
   .section6_textbox {
-   display: flex;
-   flex-direction: row;
-   color: #FFCD4C;
-   text-align: center;
-   margin-top: 200px;
- }
+    display: flex;
+    flex-direction: row;
+    color: #FFCD4C;
+    text-align: center;
+    margin-top: 200px;
+  }
 
   .section6-description {
     font-size: 20px;
@@ -447,7 +447,7 @@
   }
 
   /* 박스 안 이미지 */
-/*  .way_box1 img {
+  /*  .way_box1 img {
     width: 360%;
     position: absolute;
     z-index: 0;
@@ -474,7 +474,6 @@
     z-index: 0;
     transform: skewX(-10deg) translate(-74%, -40%);
   }*/
-
   #howTo .textBox {
     position: absolute;
     width: 100%;
@@ -567,12 +566,12 @@
   }
 
   .section6_textbox {
-   display: flex;
-   flex-direction: row;
-   color: #FFCD4C;
-   text-align: center;
-   margin-top: 120px;
- }
+    display: flex;
+    flex-direction: row;
+    color: #FFCD4C;
+    text-align: center;
+    margin-top: 120px;
+  }
 
   .section6-description {
     font-size: 14px;
@@ -619,7 +618,7 @@
     overflow: hidden;
   }
 
-  #howTo .up:hover{
+  #howTo .up:hover {
     transform: translateY(0px);
     transition: all .2s;
     transform: skewX(10deg);
@@ -639,7 +638,7 @@
   }
 
   /* 박스 안 이미지 */
-/*  .way_box1 img {
+  /*  .way_box1 img {
     width: 360%;
     position: absolute;
     z-index: 0;
@@ -666,7 +665,6 @@
     z-index: 0;
     transform: skewX(-10deg) translate(-74%, -40%);
   }*/
-
   #howTo .textBox {
     position: absolute;
     width: 100%;
@@ -714,7 +712,7 @@
   }
 
   .howTo-BG-character {
-display: none;
+    display: none;
   }
 
   .apple-fall {
@@ -722,9 +720,8 @@ display: none;
   }
 
   .apple-big {
-  display: none;
+    display: none;
   }
-
 
   .apple-regular {
     display: none;

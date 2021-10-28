@@ -172,8 +172,8 @@ input[id*="popup"]:checked+label+div {
 
   /* 동영상 모달 */
   input[id*="popup"]+label {
-    padding: 16px 24px;
-    transform: translate(-50%, 100%);
+    padding: 10px 24px;
+    transform: translate(-50%, 155%);
   }
 
   .button-text {
