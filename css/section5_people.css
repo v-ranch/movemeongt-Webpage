@@ -375,6 +375,8 @@
 
 .section5_textbox{
   margin-top: 80px;
+  width: 100%;
+  justify-content: center;
 }
 
   .section5_textbox img {
