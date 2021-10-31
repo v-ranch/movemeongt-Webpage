@@ -615,30 +615,30 @@
 
         function init() { // 초기화
 
-          el.appendChild(canvas); // canvas_wrap 엘리먼트에 캔버스를 담아줌
+    //      el.appendChild(canvas); // canvas_wrap 엘리먼트에 캔버스를 담아줌
 
-          for (var i = 0; i <= imgLength; i++) {
+    //      for (var i = 0; i <= imgLength; i++) {
 
-            var img = new Image(); //이미지 객체 인스턴스 생성
-            var path = imgSrc + i + imgFormat; //이미지 패스 생성
+    //        var img = new Image(); //이미지 객체 인스턴스 생성
+    //        var path = imgSrc + i + imgFormat; //이미지 패스 생성
 
-            img.src = path; //img에 패스 대입
+    //        img.src = path; //img에 패스 대입
 
-            img.onload = function() {
-              imageIterlator += 1; //이미지 로드 카운트 카운트
-              if (imageIterlator === imgLength) { //이미지가 로드된 횟수와 이미지 렝스가 같아질 경우에 인터렉션 함수들을 호출함
+    //        img.onload = function() {
+    //          imageIterlator += 1; //이미지 로드 카운트 카운트
+    //          if (imageIterlator === imgLength) { //이미지가 로드된 횟수와 이미지 렝스가 같아질 경우에 인터렉션 함수들을 호출함
 
                 setProperty(); //스크롤할때 변할 값들을 셋팅해주는 함수
-                //      setCanvas(); //캔버스 기본값 셋팅
+        //              setCanvas(); //캔버스 기본값 셋팅
                 bindEvent(); //스크롤 이벤트 바인드
                 scrollFunc(); //스크롤할때 실행될 함수
 
-              };
-            }
+        //      };
+        //    }
 
-            imgArray.push(img); //이미지 배열에 이미지를 담음
+        //    imgArray.push(img); //이미지 배열에 이미지를 담음
 
-          };
+      //    };
         };
 
         init(); //start
@@ -746,24 +746,24 @@
 
         function contentIn() { //텍스트 등장을 처리하는 함수
 
-          if (percent2 >= 81) {
+          if (percent2 >= 65) {
             $('.information_txt.pos1').addClass('active');
           }
-          if (percent2 < 81) {
+          if (percent2 < 65) {
             $('.information_txt.pos1').removeClass('active');
           }
 
-          if (percent2 >= 86) {
+          if (percent2 >= 70) {
             $('.information_txt.pos2').addClass('active');
           }
-          if (percent2 < 86) {
+          if (percent2 < 70) {
             $('.information_txt.pos2').removeClass('active');
           }
 
-          if (percent2 >= 93) {
+          if (percent2 >= 75) {
             $('.information_txt.pos3').addClass('active');
           }
-          if (percent2 < 93) {
+          if (percent2 < 75) {
             $('.information_txt.pos3').removeClass('active');
           }
         };
