@@ -79,7 +79,7 @@ const qnaList = [
   {
     q: '<div class="qna-circle"><img src="../img/wall_2d.png" alt="img/png"></div><div class="qText">마지막으로,<br>지금 너의 상태는 어때?</div>',
     a: [
-      { answer: '여유롭고 즐거워^0^!', type: [1, 4, 5, 6, 7] },
+      { answer: '여유롭고 즐거워 ^0^!', type: [1, 4, 5, 6, 7] },
       { answer: '생각이 복잡해...', type: [2, 3, 8] },
       { answer: '너무 지쳤어 ㅠㅠ', type: [2, 3, 8] },
       { answer: '기분이 매우 좋아 :)', type: [1, 4, 5, 6, 7] },
