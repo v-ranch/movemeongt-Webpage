@@ -118,9 +118,7 @@
 #name .name_logo {
   flex-basis: 400px;
   z-index: -100;
-  opacity: 0;
-  visibility: hidden;
-  transition: all .2s .2s;
+  opacity: 1;
   margin: 0;
   display: flex;
   align-items: baseline;
@@ -131,11 +129,6 @@
   padding-top: 5px;
 }
 
-#name .name_fix_wrap .name_cont_box .name_logo.active {
-  opacity: 1;
-  visibility: visible;
-  transition: all .2s .2s;
-}
 
 .hands-wrap {
   width: 100%;
