@@ -362,7 +362,7 @@
 
 @media (max-width: 480px) {
 #people{
-  height: 1050px;
+  height: 1650px;
 }
 
   #people .pimg {
@@ -449,7 +449,7 @@
     left: -60%
   }
 
-  .slides li:nth-child(2n) {
+/*  .slides li:nth-child(2n) {
     display: none;
-    }
+    }*/
 }
