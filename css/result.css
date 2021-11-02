@@ -145,7 +145,6 @@
 
 .test-again {
   background-color: #5826E8;
-  /*border-color: #5826E8;*/
   font-size: 20px;
   border: 0px;
   border-radius: 100px;
@@ -153,9 +152,6 @@
   font-family: 'GmarketSansMedium';
   padding: 16px 0;
   margin-top: 20px;
-}
-
-.test-again a {
   text-decoration: none;
   color: #f2f3f5;
 }
