@@ -38,9 +38,11 @@
 </head>
 
 <body>
+  <div class="loader">
+    <img src="../img/loading.gif" alt="gif/img">
+  </div>
+
   <div class="container-fluid p-0">
-
-
 
     <!-- 섹션8 -->
     <section id="testMain" class="mx-auto">
@@ -144,6 +146,11 @@
 
 
     <script src="../js/jquery.1.12.4.js"></script>
+    <script type="text/javascript">
+      $(window).load(function(){
+        $('.loader').fadeOut();
+      });
+    </script>
     <script src="../js/data.js" charset="utf-8"></script>
     <script src="../js/start.js" charset="utf-8"></script>
     <script src="../js/share.js" charset="utf-8"></script>

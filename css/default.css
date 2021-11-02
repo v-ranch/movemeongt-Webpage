@@ -1,48 +1,61 @@
-html, body{
+html, body {
   background-color: #FFCD4C;
   width: 100%;
   height: 100%;
 }
 
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
 
-.container{
+.loader {
+  width: 100vw;
+  height: 100vh;
+  z-index: 700;
+  position: fixed;
+  background: #FFCD4C;
+}
+
+.loader img {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
   height: 100%;
   width: 100%;
   position: relative;
 }
 
 /* font */
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
 /* font-family: 'Montserrat', sans-serif; */
-
 @font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'GmarketSansBold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'GmarketSansBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'GmarketSansLight';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'GmarketSansLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* navgation style */
-
-.navbar{
+.navbar {
   position: fixed;
   width: 100%;
   height: 60px;
@@ -56,7 +69,7 @@ body{
   top: -60px;
 }
 
-.nav-container{
+.nav-container {
   display: flex;
   width: 1440px;
   height: 100%;
@@ -64,55 +77,53 @@ body{
   align-items: center;
 }
 
-.nav-logo{
+.nav-logo {
   display: flex;
-  width : 140px;
+  width: 140px;
   justify-content: flex-start;
   padding-top: 7px;
 }
 
-.nav-logo img{
+.nav-logo img {
   width: 100px;
 }
 
-.nav-menu-container{
+.nav-menu-container {
   display: flex;
   width: 1300px;
   justify-content: flex-end;
 }
 
-.navbar-nav{
+.navbar-nav {
   display: flex;
   flex-direction: row;
   font-family: 'GmarketSansMedium';
   font-size: 15px;
 }
 
-.nav-item{
+.nav-item {
   display: flex;
   justify-content: center;
-  padding : 0 0 0 20px;
+  padding: 0 0 0 20px;
 }
 
-.nav-blank{
+.nav-blank {
   display: flex;
   align-items: center;
   padding: 0 0 0 20px;
 }
 
-.nav-link{
-    color: #FFCD4C;
+.nav-link {
+  color: #FFCD4C;
 }
 
 .nav-item.active .nav-link,
 .nav-item:hover .nav-link {
-    color: #5826E8;
+  color: #5826E8;
 }
 
-
 /* fastgo*/
-
-.test-fastgo{
+.test-fastgo {
   width: 80px;
   height: 80px;
   position: fixed;
@@ -126,7 +137,7 @@ body{
   cursor: pointer;
 }
 
-.fastgo-box{
+.fastgo-box {
   width: 160px;
   height: 80px;
   display: flex;
@@ -137,7 +148,7 @@ body{
   transition: all .2s;
 }
 
-.fastgo-logo{
+.fastgo-logo {
   width: 80px;
   transform: skewX(-10deg);
   margin: 0;
@@ -146,34 +157,35 @@ body{
   justify-content: center;
 }
 
-.fastgo-logo img{
+.fastgo-logo img {
   height: 50px;
 }
 
-.fastgo-text{
+.fastgo-text {
   font-size: 16px;
   font-family: 'GmarketSansMedium';
   width: 80px;
   margin: 0;
-  color : #FFCD4C;
+  color: #FFCD4C;
 }
 
-.fastgo-text span{
+.fastgo-text span {
   font-family: 'GmarketSansBold';
 }
 
-.test-fastgo a{
+.test-fastgo a {
   text-decoration: none;
   color: #FFCD4C;
 }
 
-.test-fastgo:hover .fastgo-box{
+.test-fastgo:hover .fastgo-box {
   transform: translateX(-50%);
 }
 
 @media (max-width: 1024px) {
+
   /* navgation style */
-  .navbar{
+  .navbar {
     height: 50px;
   }
 
@@ -181,37 +193,37 @@ body{
     top: -50px;
   }
 
-  .nav-container{
+  .nav-container {
     width: 768px;
   }
 
-  .nav-logo{
-    width : 120px;
+  .nav-logo {
+    width: 120px;
   }
 
-  .nav-logo img{
+  .nav-logo img {
     width: 80px;
   }
 
-  .nav-menu-container{
+  .nav-menu-container {
     width: 688px;
   }
 
-  .navbar-nav{
+  .navbar-nav {
     font-size: 14px;
   }
 
-  .nav-item, .nav-blank{
-    padding : 0 0 0 16px;
+  .nav-item, .nav-blank {
+    padding: 0 0 0 16px;
   }
 }
 
 @media (max-width: 768px) {
-  .navbar{
+  .navbar {
     display: none;
   }
 
-  .test-fastgo{
+  .test-fastgo {
     display: none;
   }
 }

@@ -41,6 +41,9 @@
 </head>
 
 <body>
+  <div class="loader">
+    <img src="img/loading.gif" alt="gif/img">
+  </div>
   <div class="container-fluid p-0">
 
     <!-- 테스트 바로가기 -->
@@ -117,7 +120,7 @@
       <!-- 동영상 모달 -->
       <input type="checkbox" id="popup">
       <label for="popup" class="button-box">
-        <p class="button-text">▶ 무브멍트 스토리</p>
+        <p class="button-text">▶ 무브멍트 스토리 보기</p>
       </label>
       <div>
         <div>
@@ -481,6 +484,11 @@
     </section>
 
     <script src="js/jquery.1.12.4.js"></script>
+    <script type="text/javascript">
+      $(window).load(function(){
+        $('.loader').fadeOut();
+      });
+    </script>
     <!-- 네비게이션 +  Name 스크롤 애니메이션 -->
     <script type="text/javascript">
       $(function() {
