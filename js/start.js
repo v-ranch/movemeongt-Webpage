@@ -18,14 +18,25 @@ function setResult() {
 
   var resultImg = document.createElement('img');
   const imgDiv = document.querySelector('#resultImg');
-  var imgURL = '../img/image-' + point + '.gif';
+  var imgURL = '../img/image-' + point + '.jpg';
   resultImg.src = imgURL;
   resultImg.alt = point;
   resultImg.classList.add('img-fluid');
   imgDiv.appendChild(resultImg);
 
   const resultDesc = document.querySelector('.resultDesc');
-  resultDesc.innerHTML = infoList[point].desc;
+  resultDesc.innerHTML = infoList[point].story;
+
+  var resultHowImg = document.createElement('img');
+  const imgHowDiv = document.querySelector('#resultHowImg');
+  var imgHowURL = '../img/image-' + point + '.gif';
+  resultHowImg.src = imgHowURL;
+  resultHowImg.alt = point;
+  resultHowImg.classList.add('img-fluid');
+  imgHowDiv.appendChild(resultHowImg);
+
+  const resultHow = document.querySelector('.resultHow');
+  resultHow.innerHTML = infoList[point].desc;
 }
 
 function goResult() {

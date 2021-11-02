@@ -5,7 +5,7 @@ function setShare(){
   var resultAlt = resultImg.firstElementChild.alt;
   const shareTitle = '지금 당신에게 무브멍트가 추천하는 멍은?'
   const shareDes = infoList[resultAlt].name;
-  const shareImage = url + 'img/image-' + resultAlt + '.png';
+  const shareImage = url + 'img/image-' + resultAlt + '.jpg';
   const shareURL = url + 'page/result-' + resultAlt + '.html';
 
   Kakao.Link.sendDefault({
