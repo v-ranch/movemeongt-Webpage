@@ -1,6 +1,6 @@
 #name {
   height: 4000px;
-  width: 1920px;
+  width: 100%;
   color: #333333;
   position: relative;
   background-color: #FFCD4C;
@@ -146,7 +146,7 @@
 }
 
 .hands-wrap.active {
-  transform: translateY(-10%);
+  transform: translateY(-18%);
   transition: all .4s;
 }
 

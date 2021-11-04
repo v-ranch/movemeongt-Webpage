@@ -6,7 +6,7 @@
 }
 
 .section7-container {
-  height: 1400px;
+  height: 1350px;
   background-image: url('../img/gradient-bg.jpg');
   position: relative;
   background-position: center;
@@ -64,12 +64,12 @@
 .movemeongt{
   font-family: 'GmarketSansMedium';
   font-size: 16px;
-  color: #f2f3f5;
+  color: #5826E8;
   position: absolute;
   bottom: 0;
   z-index: 3;
   left: 50%;
-  transform: translate(-50%, -150%);
+  transform: translate(-50%, -200%);
 }
 
 @media (max-width: 1024px) {
@@ -154,7 +154,7 @@
 
 @media (max-width: 480px) {
   .section7-container {
-    height: 600px;
+    height: 550px;
 
   }
 
@@ -185,7 +185,6 @@
     font-size: 16px;
     padding-top: 4px;
   }
-
 
   .movemeongt{
     display: none;
