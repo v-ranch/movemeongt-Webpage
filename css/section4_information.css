@@ -106,6 +106,14 @@
   text-align: center;
 }
 
+#information .mobile{
+  display: none;
+}
+
+#information .pc{
+  display: block;
+}
+
 @media (max-width: 1024px) {
   #information {
     /*  height: 7000px;*/
@@ -192,6 +200,14 @@
 }
 
 @media (max-width: 768px) {
+  #information .mobile{
+    display: block;
+  }
+
+  #information .pc{
+    display: none;
+  }
+
   #information {
     /*  height: 7000px;*/
     width: 100%;

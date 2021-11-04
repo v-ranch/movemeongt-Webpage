@@ -234,3 +234,9 @@ input[id*="popup"]:checked+label+div {
     transform: translate(-50%, 350%);
   }
 }
+
+@media (max-width: 360px) {
+  .button-text {
+    font-size: 13px;
+  }
+}

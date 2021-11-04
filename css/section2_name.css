@@ -28,7 +28,7 @@
 
 #name .name_fix_wrap .name_cont_box .name_canvas_wrap {
   position: relative;
-/*  width: 100%;*/
+  /*  width: 100%;*/
   height: 100vh;
   opacity: 1;
   visibility: visible;
@@ -129,7 +129,6 @@
   padding-top: 5px;
 }
 
-
 .hands-wrap {
   width: 100%;
   padding-top: 100px;
@@ -178,6 +177,8 @@
   opacity: 0;
   visibility: hidden;
 }
+
+
 
 @media (max-width: 1024px) {
   #name {
@@ -397,6 +398,8 @@
     opacity: 0;
     visibility: hidden;
   }*/
+
+
 }
 
 @media (max-width: 480px) {
@@ -452,7 +455,7 @@
     padding-top: 60px;
   }
 
-  .hands-wrap.active{
+  .hands-wrap.active {
     transform: translateY(25%);
   }
 
@@ -475,5 +478,37 @@
     -moz-transform: translate(-50%, -300%);
     -o-transform: translate(-50%, -300%);
     -ms-transform: translate(-50%, -300%);
+  }
+}
+
+@media (max-width: 360px) {
+  .hands-wrap {
+    width: 90%;
+    padding-top: 60px;
+  }
+
+  .hands-wrap.active {
+    transform: translateY(-10%);
+  }
+
+  .hands-wrap img {
+    width: 100%;
+  }
+
+  .celebration {
+    width: 90%;
+    transform: translate(-50%, -340%);
+    -webkit-transform: translate(-50%, -340%);
+    -moz-transform: translate(-50%, -340%);
+    -o-transform: translate(-50%, -340%);
+    -ms-transform: translate(-50%, -340%);
+  }
+
+  .celebration.active {
+    transform: translate(-50%, -220%);
+    -webkit-transform: translate(-50%, -220%);
+    -moz-transform: translate(-50%, -220%);
+    -o-transform: translate(-50%, -220%);
+    -ms-transform: translate(-50%, -220%);
   }
 }
