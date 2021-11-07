@@ -37,6 +37,39 @@ function setResult() {
 
   const resultHow = document.querySelector('.resultHow');
   resultHow.innerHTML = infoList[point].desc;
+
+  var qrImg = document.createElement('img');
+  const qrImgDiv = document.querySelector('.qr-img');
+  var qrImgURL = '../img/qr-' + point + '.png';
+  qrImg.src = qrImgURL;
+  qrImg.alt = point;
+  qrImg.classList.add('img-fluid');
+  qrImgDiv.appendChild(qrImg);
+
+  const qrTitle = document.querySelector('.qr-title');
+  qrTitle.innerHTML = infoList[point].qrTitle;
+  qrTitle.classList.add('desc-title');
+
+  const qrDesc = document.querySelector('.qr-desc');
+  qrDesc.innerHTML = infoList[point].qrDesc;
+  qrDesc.classList.add('desc-text');
+
+  /*mobile*/
+  var qrImgMob = document.createElement('img');
+  const qrImgMobDiv = document.querySelector('.qr-img-mobile');
+  var qrImgMobURL = '../img/qrMob-' + point + '.png';
+  qrImgMob.src = qrImgMobURL;
+  qrImgMob.alt = point;
+  qrImgMob.classList.add('img-fluid');
+  qrImgMobDiv.appendChild(qrImgMob);
+
+  const qrButton = document.querySelector('.qr-button');
+  qrButton.innerHTML = infoList[point].qrButton;
+  /*qrButton.classList.add('desc-title');*/
+
+  const qrDescMob = document.querySelector('.qr-desc-mobile');
+  qrDescMob.innerHTML = infoList[point].qrDescMobile;
+  qrDescMob.classList.add('desc-text');
 }
 
 function goResult() {

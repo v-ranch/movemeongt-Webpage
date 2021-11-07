@@ -91,33 +91,33 @@
   transition: all .3s;
 }
 
-/* 박스 안 이미지 */
+/*박스 안 이미지*/
 .way_box1 img {
-  width: 360%;
+  width: 121%;
   position: absolute;
   z-index: 0;
-  transform: skewX(-10deg) translate(-390px, -220px);
+  transform: skewX(-10deg) translate(-8%, 1%);
 }
 
 .way_box2 img {
-  width: 300%;
+  width: 121%;
   position: absolute;
   z-index: 0;
-  transform: skewX(-10deg) translate(-360px, -130px);
+  transform: skewX(-10deg) translate(-8%, 1%);
 }
 
 .way_box3 img {
-  width: 250%;
+  width: 121%;
   position: absolute;
   z-index: 0;
-  transform: skewX(-10deg) translate(-340px, -50px);
+  transform: skewX(-10deg) translate(-8%, 1%);
 }
 
 .way_box4 img {
-  width: 420%;
+  width: 121%;
   position: absolute;
   z-index: 0;
-  transform: skewX(-10deg) translate(-880px, -240px);
+  transform: skewX(-10deg) translate(-8%, 1%);
 }
 
 #howTo .textBox {
@@ -190,6 +190,11 @@
 
 .apple-regular img {
   width: 60%;
+}
+
+#howTo .mobile{
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 @media (max-width: 1024px) {
@@ -273,34 +278,6 @@
     transition: all .3s;
   }
 
-  /* 박스 안 이미지 */
-  .way_box1 img {
-    width: 360%;
-    position: absolute;
-    z-index: 0;
-    transform: skewX(-10deg) translate(-38%, -40%);
-  }
-
-  .way_box2 img {
-    width: 300%;
-    position: absolute;
-    z-index: 0;
-    transform: skewX(-10deg) translate(-42%, -31%);
-  }
-
-  .way_box3 img {
-    width: 250%;
-    position: absolute;
-    z-index: 0;
-    transform: skewX(-10deg) translate(-45%, -15%);
-  }
-
-  .way_box4 img {
-    width: 420%;
-    position: absolute;
-    z-index: 0;
-    transform: skewX(-10deg) translate(-74%, -40%);
-  }
 
   #howTo .textBox {
     position: absolute;
@@ -446,34 +423,6 @@
     transition: all .3s;
   }
 
-  /* 박스 안 이미지 */
-  /*  .way_box1 img {
-    width: 360%;
-    position: absolute;
-    z-index: 0;
-    transform: skewX(-10deg) translate(-38%, -40%);
-  }
-
-  .way_box2 img {
-    width: 300%;
-    position: absolute;
-    z-index: 0;
-    transform: skewX(-10deg) translate(-42%, -31%);
-  }
-
-  .way_box3 img {
-    width: 250%;
-    position: absolute;
-    z-index: 0;
-    transform: skewX(-10deg) translate(-45%, -15%);
-  }
-
-  .way_box4 img {
-    width: 420%;
-    position: absolute;
-    z-index: 0;
-    transform: skewX(-10deg) translate(-74%, -40%);
-  }*/
   #howTo .textBox {
     position: absolute;
     width: 100%;
@@ -584,10 +533,10 @@
     position: relative;
     width: 320px;
     height: 1296px;
-    margin-top: 30px;
+    margin-top: 8px;
     z-index: 1;
     transform: none;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     flex-wrap: wrap;
   }
 
