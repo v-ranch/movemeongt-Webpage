@@ -172,11 +172,11 @@
 
 .celebration.active {
   opacity: 1;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
+  -webkit-transform: translate(-50%, -40%);
+  -moz-transform: translate(-50%, -40%);
+  -o-transform: translate(-50%, -40%);
+  -ms-transform: translate(-50%, -40%);
 }
 
 #name .name_fix_wrap .name_cont_box .name_canvas_wrap.active {
