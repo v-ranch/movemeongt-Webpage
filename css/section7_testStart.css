@@ -17,7 +17,7 @@
   align-items: center;
 }
 
-.section7-intro{
+.section7-intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,7 +25,7 @@
   margin-top: 100px;
 }
 
-.test-button{
+.test-button {
   padding: 16px 30px;
   background: #FFCD4C;
   border: none;
@@ -35,11 +35,11 @@
   border-radius: 100px;
 }
 
-.test-button a{
+.test-button a {
   text-decoration: none;
 }
 
-.test-button-text{
+.test-button-text {
   font-family: 'GmarketSansMedium';
   font-size: 20px;
   color: #5826E8;
@@ -47,21 +47,21 @@
   padding-top: 4px;
 }
 
-.test-button:hover{
+.test-button:hover {
   background: #5826E8;
 }
 
-.test-button:hover .test-button-text{
+.test-button:hover .test-button-text {
   color: #FFCD4C;
 }
 
-.section7-bottom-img img{
+.section7-bottom-img img {
   position: absolute;
   left: 0;
   bottom: 0;
 }
 
-.movemeongt{
+.movemeongt {
   font-family: 'GmarketSansMedium';
   font-size: 16px;
   color: #5826E8;
@@ -75,10 +75,9 @@
 @media (max-width: 1024px) {
   .section7-container {
     height: 910px;
-
   }
 
-  .section7-intro{
+  .section7-intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,7 +85,7 @@
     margin-top: 100px;
   }
 
-  .test-button{
+  .test-button {
     padding: 10px 24px;
     background: #FFCD4C;
     border: none;
@@ -96,17 +95,16 @@
     border-radius: 100px;
   }
 
-  .test-button a{
+  .test-button a {
     text-decoration: none;
   }
 
-  .test-button-text{
+  .test-button-text {
     font-size: 16px;
     padding-top: 4px;
   }
 
-
-  .movemeongt{
+  .movemeongt {
     font-size: 12px;
     transform: translate(-50%, -140%);
   }
@@ -115,10 +113,9 @@
 @media (max-width: 768px) {
   .section7-container {
     height: 785px;
-
   }
 
-  .section7-intro{
+  .section7-intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,7 +123,7 @@
     margin-top: 100px;
   }
 
-  .test-button{
+  .test-button {
     padding: 10px 24px;
     background: #FFCD4C;
     border: none;
@@ -136,17 +133,16 @@
     border-radius: 100px;
   }
 
-  .test-button a{
+  .test-button a {
     text-decoration: none;
   }
 
-  .test-button-text{
+  .test-button-text {
     font-size: 16px;
     padding-top: 4px;
   }
 
-
-  .movemeongt{
+  .movemeongt {
     font-size: 12px;
     transform: translate(-50%, -80%);
   }
@@ -155,10 +151,9 @@
 @media (max-width: 480px) {
   .section7-container {
     height: 550px;
-
   }
 
-  .section7-intro{
+  .section7-intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -166,8 +161,7 @@
     margin-top: 100px;
   }
 
-
-  .test-button{
+  .test-button {
     padding: 10px 24px;
     background: #FFCD4C;
     border: none;
@@ -177,16 +171,16 @@
     border-radius: 100px;
   }
 
-  .test-button a{
+  .test-button a {
     text-decoration: none;
   }
 
-  .test-button-text{
+  .test-button-text {
     font-size: 16px;
     padding-top: 4px;
   }
 
-  .movemeongt{
+  .movemeongt {
     display: none;
   }
 }

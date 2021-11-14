@@ -236,37 +236,26 @@
 
   .section5-description {
     font-size: 20px;
-    /*    margin-top: 20px;*/
   }
 
   #people .section5_wrapper {
     width: 968px;
-    /*    height: 215px;
-    margin-top: 60px;*/
   }
 
   #people .slide_wrapper {
     width: 768px;
     height: 200px;
-    /*  margin: 0 auto;
-    overflow: hidden;*/
   }
 
   #people .slides li {
     width: 240px;
     height: 200px;
-    /*  background: rgba(242, 243, 245, .6);
-    float: left;
-    border: 1px solid #5826E8;*/
   }
 
   #people .controls {
     width: 968px;
     height: 200px;
     font-size: 24px;
-    /*  font-weight: 700;
-    z-index: 1;
-    top: -200px;*/
   }
 
   .prev {
@@ -361,9 +350,9 @@
 }
 
 @media (max-width: 480px) {
-#people{
-  height: 1650px;
-}
+  #people {
+    height: 1650px;
+  }
 
   #people .pimg {
     height: 100%;
@@ -373,11 +362,11 @@
     justify-content: flex-start;
   }
 
-.section5_textbox{
-  margin-top: 80px;
-  width: 100%;
-  justify-content: center;
-}
+  .section5_textbox {
+    margin-top: 80px;
+    width: 100%;
+    justify-content: center;
+  }
 
   .section5_textbox img {
     margin-top: 8px;
@@ -407,13 +396,13 @@
     justify-content: center;
   }
 
-  #people .slides{
+  #people .slides {
     position: relative;
     width: 300px !important;
     transform: none !important;
   }
 
-  #people .slides.animated{
+  #people .slides.animated {
     position: relative;
     width: 300px !important;
     transform: none !important;
@@ -430,7 +419,7 @@
     display: none;
   }
 
-  .clone{
+  .clone {
     display: none;
   }
 
@@ -448,8 +437,4 @@
   .uxBoxImg img {
     left: -60%
   }
-
-/*  .slides li:nth-child(2n) {
-    display: none;
-    }*/
 }

@@ -57,7 +57,6 @@ input[id*="popup"] {
 input[id*="popup"]+label {
   position: absolute;
   display: inline-block;
-  /*padding: 20px;*/
   background: #FFCD4C;
   cursor: pointer;
   top: 50%;
@@ -103,7 +102,7 @@ input[id*="popup"]+label+div>div {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 1280px;
-  background: #FFCD4C;
+  background: #000000;
   z-index: 2;
 }
 
@@ -136,10 +135,6 @@ input[id*="popup"]+label+div>label {
   z-index: 1;
 }
 
-/*
-input[id*="popup"] + label + div {display:none;}
-input[id*="popup"]:checked + label + div {display:block;}
-*/
 input[id*="popup"]+label+div {
   opacity: 0;
   visibility: hidden;
@@ -243,8 +238,8 @@ input[id*="popup"]:checked+label+div {
   .button-text {
     font-size: 13px;
   }
-  
-  .button-box{
+
+  .button-box {
     min-width: 180px;
   }
 }

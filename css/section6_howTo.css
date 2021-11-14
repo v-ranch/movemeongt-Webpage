@@ -192,27 +192,12 @@
   width: 60%;
 }
 
-#howTo .mobile{
+#howTo .mobile {
   margin-top: 20px;
   margin-bottom: 0;
 }
 
 @media (max-width: 1024px) {
-
-  /*.section6-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }*/
-  /*  .section6_textbox {
-    display: flex;
-    flex-direction: row;
-    color: #FFCD4C;
-    text-align: center;
-    margin-top: 300px;
-  }*/
   .section6_textbox img {
     margin-top: 12px;
     height: 70px;
@@ -277,7 +262,6 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0);
     transition: all .3s;
   }
-
 
   #howTo .textBox {
     position: absolute;
@@ -568,6 +552,7 @@
     transition: all .2s;
     overflow: hidden;
   }
+
   #howTo .up:hover {
     transform: translateY(-15px) skewX(10deg);
     transition: all .2s;
@@ -602,29 +587,6 @@
   #howTo .up:hover .waybox_wrap {
     opacity: 1;
   }
-/*보류
-  #howTo .waybox_wrap {
-    opacity: 0;
-  }
-
-  #howTo .up:hover .waybox_wrap {
-    opacity: 1;
-  }
-
-
-  #howTo .up:hover {
-    transform: translateY(0px);
-    transform: skewX(10deg);
-  }
-
-  #howTo .up:hover .way {
-    box-shadow: none;
-  }
-
-  .way {
-    box-shadow: none;
-    transition: none;
-  }*/
 
   #howTo .textBox {
     position: absolute;
@@ -634,7 +596,6 @@
     opacity: .7;
     z-index: 1;
   }
-
 
   #howTo .waytext {
     position: absolute;
